@@ -1,2 +1,11 @@
 # OwnDoc
-Personal read the docs web site
+
+## Description
+
+R Mardown web site projet used for personal documentation and projects
+
+## How to generate
+
+````
+rmarkdown::render_site()
+````
