@@ -12,5 +12,6 @@ CTestTestfile.cmake
 .Rproj.user
 .Rhistory
 _site
+.RData
 
 
