@@ -13,6 +13,7 @@ CTestTestfile.cmake
 .Rhistory
 public/*
 .RData
+content/*.html
 
 
 
