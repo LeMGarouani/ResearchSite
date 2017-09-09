@@ -22,6 +22,14 @@ fit <- lm(dist ~ speed, data = cars)
 fit
 ```
 
+# Iris documentation 
+```{r iris}
+summary(iris)
+plot(data = iris, x = iris$Sepal.Length, y = iris$Sepal.Width, type = "h")
+fit <- lm(iris$Sepal.Length ~ iris$Petal.Length, data = iris)
+fit
+```
+
 # Including Plots
 
 You can also embed plots. See Figure \@ref(fig:pie) for example:
