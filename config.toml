@@ -1,7 +1,7 @@
 # No base URL by default
 #baseurl =   # End your URL with a `/` trailing slash.
 title = "Jérôme Buisine"
-copyright = "&copy;left 2017 Jérôme Buisine"
+copyright = "&copy;  2017 Jérôme Buisine"
 theme = "hugo-academic"
 enableEmoji = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
@@ -43,7 +43,7 @@ defaultContentLanguageInSubdir = false
 
   # Enable global LaTeX math rendering?
   #   If false, you can enable it locally on a per page basis.
-  math = true
+  math = false
 
   # Highlight.js options
   #   highlight
@@ -131,14 +131,19 @@ defaultContentLanguageInSubdir = false
     link = "mailto:jerome.buisine@outlook.fr"
 
   [[params.social]]
+    icon = "linkedin"
+    icon_pack = "fa"
+    link = "//linkedin.com/in/jérôme-buisine-b62b24100/"
+
+  [[params.social]]
     icon = "github"
     icon_pack = "fa"
     link = "//github.com/jbuisine"
 
-  [[params.social]]
-    icon = "twitter"
-    icon_pack = "fa"
-    link = "//twitter.com/JeromeBuisine"
+#  [[params.social]]
+#    icon = "twitter"
+#    icon_pack = "fa"
+#    link = "//twitter.com/JeromeBuisine"
 
 #  [[params.social]]
 #    icon = "google-scholar"
@@ -159,16 +164,15 @@ defaultContentLanguageInSubdir = false
 #  name = "Publications"
 #  url = "#publications_selected"
 #  weight = 2
+#[[menu.main]]
+#  name = "Posts"
+#  url = "#posts"
+#  weight = 3
 
 [[menu.main]]
-  name = "Posts"
-  url = "#posts"
-  weight = 3
-
-#[[menu.main]]
-#  name = "Projects"
-#  url = "#projects"
-#  weight = 4
+  name = "Projects"
+  url = "#projects"
+  weight = 4
 
 #[[menu.main]]
 #  name = "Teaching"
@@ -191,4 +195,4 @@ defaultContentLanguageInSubdir = false
 
 # Configure the English version of the website.
 [languages.en]
-  languageCode = "en-us"
+  languageCode = "en-uk"
