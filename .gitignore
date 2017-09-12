@@ -8,13 +8,11 @@ install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 
+# R markdown generated files
+content/**/*.html
+
 # R project
 .Rproj.user
 .Rhistory
 public/*
 .RData
-content/*.html
-
-
-
-
