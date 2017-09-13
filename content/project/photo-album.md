@@ -3,13 +3,13 @@
 date = "2016-07-02"
 
 # Project title.
-title = "Photo Album"
+title = "Multi-objective optimization based on photo album QAP"
 
 # Project summary to display on homepage.
-summary = "Multi-objective optimization based on photo album QAP instance."
+summary = "Comparisons of multi-objective algorithms based on photo album QAP such as MOEA/D and TP-LS"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "bubbles.jpg"
+#image_preview = "bubbles.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
@@ -23,20 +23,20 @@ math = false
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "headers/bubbles-wide.jpg"
+#image = "headers/bubbles-wide.jpg"
 caption = "Photo album QAP"
 
 +++
 
-
-**Multiobjective algorithms performance on photo album QAP instance**
-=====================================================================
 ---------------------------------------------------------------------
 * __Supervisors__ : F. Teytaud, S. Verel.
 * __Author__ : Jérôme Buisine, IT Student at ULCO Calais.
 
 ***
 
+[![Download: report](https://img.shields.io/badge/download-report-lightgrey.svg)](/sources/projects/album-photo/M1_PhotoAlbumProject.pdf)
+
+[![Download: report](https://img.shields.io/badge/download-presentation-lightgrey.svg)](/sources/projects/album-photo/M1_PhotoAlbumProjectDiapo.pdf)
 Abstract
 ========
 
@@ -45,7 +45,7 @@ Its aim is to learn more about different kind of Multiobjective algorithm, compa
 which algorithm can be well adapted for a specific quadratic assignment
 problem instance.
 
-**State of art :** and Beckmann in 1957 [@koopmans1957assignmen] in the context of
+**State of art :** and Beckmann in 1957 [1] in the context of
 locating . The objective of the problem is to assign a set of facilities
 to a set of locations in such a way as to minimize the total assignment
 cost. The assignment cost for a pair of facilities is a function of the
@@ -109,8 +109,6 @@ follows.
     Binomial coefficient is used in our case to avoid repetitions of
     solutions.
 
-<!-- -->
-
 -   $S = (s\_{ij})$ is an $n \times n$ matrix where $s\_{ij}$ is the
     computed similarity distance between photos $i$ and $j$.
 
@@ -141,7 +139,7 @@ objective based on specific criteria. So, our mQAP can treat $n$
 similarity matrix. In this paper, we will take a look at the different
 criteria which can be used and select two of them for test suites.
 
-Following [@DBLP:conf/emo/LiefoogheVPH15], this mQAP treated on this
+Following [2], this mQAP treated on this
 paper can be formalized as follows :
 
 $$\min f\_1(\phi) = \sum\_{i=1}^{n} \sum\_{j=1}^{n} s^1\_{ij}.d\_{\phi(i)\phi(j)}$$
@@ -219,8 +217,9 @@ This test context is defined as follows.
 
 A photo disposition in our test suites is represented as follows.
 
-![image](pictures/photos/photo1_project.png){width="\linewidth"}
-![image](pictures/photos/photo2_project.png){width="\linewidth"}
+| Example 1  | Example 2 |
+| ------------- | ------------- |
+|![image](/img/projects/album-photo/others/photo1_project.png)| ![image](/img/projects/album-photo/others/photo2_project.png) |
 
   Each algorithm performance will be rated with features based on
 $V(N)$, the neighbor set of current solution iteration treated. We will
@@ -249,7 +248,7 @@ Random walk algorithm goal is to simply search solution randomly from
 the search space at each iteration and refresh the non dominated
 solution. Just below the implementation of this algorithm.
 
-$A := \theta$ evaluation := 0
+![image](/img/projects/album-photo/algos/Algorithm1.png)
 
 Pareto Local Search algorithm
 -----------------------------
@@ -260,14 +259,13 @@ dominated solutions. These solutions produce the Pareto Front and they
 are all Pareto optima solutions if all solutions have been seen. A
 preview implementation of this algorithm is available below.
 
-$A := A_0$ explored :=
-$A_0$ evaluation := 0
+![image](/img/projects/album-photo/algos/Algorithm2.png)
 
 MOEA/D algorithm
 ----------------
 
 The Multiobjective Evolutionary Algorithm Based on Decomposition
-[@DBLP:journals/tec/ZhangL07] is a scalarizing approach with population.
+[3] is a scalarizing approach with population.
 Scalarizing approaches consist in transforming the original problem into
 a single-objective one by means of an aggregation of the objective
 function values. There is two typical scalarizing functions used into
@@ -290,38 +288,18 @@ this paper.
 In this paper, we will compare these two approaches on the MOEA/D
 algorithm. The implementation of this algorithm is described below.
 
-* $EP :=\theta$
-* $\lambda := computeWeightVectors(N)$
-* $B$ := generating with $B(i) = \{i\_1, ..., i\_T\}$ where $\lambda\_{i1}, ...,
-\lambda\_{iT}$ are the closest weight vectors to $\lambda\_i$
-* $P$ := initial population $x_1, ..., x_N$ of each sub problem set randomly
-* $FV$ := matrix which contains objective values of each $P$ solution where
-$FV\_i$ is the $F$-Value of $x_i$ represented as $FV\_i = F(x\_i)$
-* $z$ := reference point generating with min value of each objective found so far
-into $FV$
-* evaluation := 0
+![image](/img/projects/album-photo/algos/Algorithm3.png)
 
 TP-LS algorithm
 ---------------
 
-The Two-Phase Local Search [@DBLP:conf/emo/LiefoogheDVAT17] consists in
+The Two-Phase Local Search [4] consists in
 a hybrid two-phase approach. In this paper we will apply MOEA/D and PLS
 algorithm in a sequential way. We also look at the different scalarizing
 approach used on MOEA/D and their benefits on the PLS algorithm. Below
 the implementation of this algorithm.
 
-In
-  * N : the number of sub problem
-  * T : the number of the weight vectors in the neighbor hood of each weight vector
-  * g : the single objective scalarizing approach
-  * nbEvalMOEAD : MOEAD evaluation stopping criteria
-  * nbEvalPLS : PLS evaluation stopping criteria
-
-Out
-* A : set of optima solutions
-
-1. $A :=$ MOEAD\_Algo(nbEvalMOEAD, N, T, g)
-2. $A :=$ PLS\_Algo(nbEvalPLS, A)
+![image](/img/projects/album-photo/algos/Algorithm4.png)
 
 
 Performance comparisons
@@ -338,13 +316,7 @@ is too small to compare it visually. So, I had preferred to compare
 computations results of all algorithms used. Below the different graphs
 results.  
 
-![image](pictures/Random/RandomWalk_plot.png){width="\linewidth"}
-![image](pictures/MOEAD/MOEAD_W_plot.png){width="\linewidth"}
-![image](pictures/MOEAD/MOEAD_T_plot.png){width="\linewidth"}
-
-![image](pictures/PLS/PLS_plot.png){width="\linewidth"}
-![image](pictures/TPLS/TPLS_W_plot.png){width="\linewidth"}
-![image](pictures/TPLS/TPLS_T_plot.png){width="\linewidth"}
+![image](/img/projects/album-photo/infos/landscapes.png)
 
 Random walk is perhaps better in terms of computing resources but graph
 shows it is not a well perform algorithm for our QAP. It does not found
@@ -370,14 +342,7 @@ number non dominated neighbors, Hyper volume difference between hyper
 volume of the current solution and hyper volume local (Hyper volume of
 its neighbors).
 
-![image](pictures/Comparisons/mean_d_plot.png){width="\linewidth"}
-![image](pictures/Comparisons/sd_d_plot.png){width="\linewidth"}
-
-![image](pictures/Comparisons/mean_nd_plot.png){width="\linewidth"}
-![image](pictures/Comparisons/sd_nd_plot.png){width="\linewidth"}
-
-![image](pictures/Comparisons/mean_hvl_plot.png){width="\linewidth"}
-![image](pictures/Comparisons/sd_hvl_plot.png){width="\linewidth"}
+![image](/img/projects/album-photo/infos/features.png)
 
 ### ND & D information
 
@@ -393,12 +358,12 @@ quickly, but they stay constant after a certain number of interations.
 TP-LS algorithm grow up when PLS is thrown. We can note that the
 weighted sum seems to be more performing than Tchebycheff approach.
 
-[ Standard deviation graphs based on dominated and non dominated values
+Standard deviation graphs based on dominated and non dominated values
 tell us that the PLS and Random walk algorithm have low variation after
 a certain time. As contrary the others continue to vary during the
 computation. Perhaps PLS algorithm can’t find new non dominated
 solutions readily as a lot of nice solutions have been already seen and
-random walk is so random and can find good solutions easily. ]{}
+random walk is so random and can find good solutions easily.
 
 ### Hyper volume information
 
@@ -448,3 +413,13 @@ solution to client, let him modify photos disposition before validate
 and compare the impact on objectives. Then, set bonus and penalties in
 function of these latest modifications after comparison. Each criteria
 significance can be personalized for the client and its future album.
+
+---
+
+**[1]** T.  C.  Koopmans  and  M.  Beckmann.   Assignment  problems  and  the  location  of  economic  activities. *Econometrica:  journal of the Econometric Society*, pages 53–76, 1957
+
+**[2]** A. Liefooghe, B. Derbel, S. V ́erel, H. E. Aguirre, and K. Tanaka.  A fitness landscape analysis of paretolocal search on bi-objective permutation flowshop scheduling problems.  In H. Trautmann, G. Rudolph,K. Klamroth, O. Sch ̈utze, M. M. Wiecek, Y. Jin, and C. Grimme, editors, *Evolutionary Multi-CriterionOptimization  -  9th  International  Conference,  EMO  2017,  M ̈unster,  Germany,  March  19-22,  2017,  Pro-ceedings, volume 10173 ofLecture Notes in Computer Science*, pages 422–437. Springer, 2017
+
+**[3]** A. Liefooghe, S. V ́erel, L. Paquete, and J. Hao. Experiments on local search for bi-objective unconstrainedbinary quadratic programming. In A. Gaspar-Cunha, C. H. Antunes, and C. A. C. Coello, editors, *Evolutionary Multi-Criterion Optimization - 8th International Conference, EMO 2015, Guimaraes, Portugal,March 29 -April 1, 2015. Proceedings, Part I, volume 9018 ofLecture Notes in Computer Science*, pages 171–186. Springer, 2015
+
+**[4]** Q. Zhang and H. Li. MOEA/D: A multiobjective evolutionary algorithm based on decomposition.*IEEE Trans. Evolutionary Computation*, 11(6):712–731, 2007
