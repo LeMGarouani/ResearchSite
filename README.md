@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/jbuisine/ResearchSite/blob/master/LICENSE)
+
 # Research Site
 
 ## Description
@@ -8,23 +10,23 @@ Personal website project used for personal research and projects presentation. T
 
 ### Requirements
 
-To launch this kind of website, you need to install R package [blogdown](https://github.com/rstudio/blogdown) and its requirements.
-
-It's an open-source (GPL-3) R package to generate static websites based on [R Markdown](http://rmarkdown.rstudio.com) and [Hugo](https://gohugo.io). You can install the package via:
-
-```r
-devtools::install_github('rstudio/blogdown')
-```
-
+To launch this kind of website, you need to install [hugo](https://gohugo.io/) and its requirements.
 
 ### Launch project
 
-First, clone project and then into R studio terminal :
+First, clone project and theme sub module :
 
 ```
-blogdown::serve_site()
+git clone --recursive [GIT_URL]
+cd ResearchSite
 ```
 
-## Licence
+Launch server
+```
+hugo server --watch
+```
 
-[GPLv3](https://github.com/jbuisine/ResearchSite/blob/master/LICENSE)
+Or just build static content
+```
+hugo
+```
