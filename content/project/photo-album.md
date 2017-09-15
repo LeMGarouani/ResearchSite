@@ -29,8 +29,9 @@ caption = "Photo album QAP"
 +++
 
 ---------------------------------------------------------------------
-* __Supervisors__ : F. Teytaud, S. Verel.
-* __Author__ : Jérôme Buisine, IT Student at ULCO Calais.
+__Supervisors__ : F. Teytaud, S. Verel.
+
+__Author__ : Jérôme Buisine, IT Student at ULCO Calais.
 
 ***
 
