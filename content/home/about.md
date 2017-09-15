@@ -37,6 +37,6 @@ weight = 1
 
 # Biography
 
-I'm a passionate IT student in Master's degree. I'm fond of computer sciences and particularly domains of Operations Research and Artificial Intelligence. I read a lot of book during my free time and sometimes collaborate into the IT free world.
+I'm a passionate IT student in Master's degree. I'm fond of computer sciences and particularly domains of Operations Research and Artificial Intelligence. I read a lot of books during my free time and sometimes collaborate into the IT free world.
 
 My goal is to continue in this vast domain of IT research. In this way, during my second year of apprenticeship, I joined ArcelorMittal's SIMO team to discover more precisely Operations Research!
