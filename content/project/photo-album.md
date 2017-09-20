@@ -140,7 +140,7 @@ objective based on specific criteria. So, our mQAP can treat $n$
 similarity matrix. In this paper, we will take a look at the different
 criteria which can be used and select two of them for test suites.
 
-Following [2], this mQAP treated on this
+Following [3], this mQAP treated on this
 paper can be formalized as follows :
 
 $$\min f\_1(\phi) = \sum\_{i=1}^{n} \sum\_{j=1}^{n} s^1\_{ij}.d\_{\phi(i)\phi(j)}$$
@@ -266,13 +266,13 @@ MOEA/D algorithm
 ----------------
 
 The Multiobjective Evolutionary Algorithm Based on Decomposition
-[3] is a scalarizing approach with population.
+[4] is a scalarizing approach with population.
 Scalarizing approaches consist in transforming the original problem into
 a single-objective one by means of an aggregation of the objective
 function values. There is two typical scalarizing functions used into
 this paper.
 
--   Weighted-sum scalarizing function [@DBLP:conf/emo/LiefoogheDVAT17]
+-   Weighted-sum scalarizing function [2]
     defined below.
 
     $$g\_\lambda(x) = \lambda\_1.f\_1(x) + \lambda\_2.f\_2(x)$$ where
@@ -419,8 +419,8 @@ significance can be personalized for the client and its future album.
 
 **[1]** T.  C.  Koopmans  and  M.  Beckmann.   Assignment  problems  and  the  location  of  economic  activities. *Econometrica:  journal of the Econometric Society*, pages 53–76, 1957
 
-**[2]** A. Liefooghe, B. Derbel, S. V ́erel, H. E. Aguirre, and K. Tanaka.  A fitness landscape analysis of paretolocal search on bi-objective permutation flowshop scheduling problems.  In H. Trautmann, G. Rudolph,K. Klamroth, O. Sch ̈utze, M. M. Wiecek, Y. Jin, and C. Grimme, editors, *Evolutionary Multi-CriterionOptimization  -  9th  International  Conference,  EMO  2017,  M ̈unster,  Germany,  March  19-22,  2017,  Pro-ceedings, volume 10173 ofLecture Notes in Computer Science*, pages 422–437. Springer, 2017
+**[2]** A. Liefooghe, B. Derbel, S. Verel, H. E. Aguirre, and K. Tanaka.  A fitness landscape analysis of paretolocal search on bi-objective permutation flowshop scheduling problems.  In H. Trautmann, G. Rudolph,K. Klamroth, O. Sch ̈utze, M. M. Wiecek, Y. Jin, and C. Grimme, editors, *Evolutionary Multi-CriterionOptimization  -  9th  International  Conference,  EMO  2017,  M ̈unster,  Germany,  March  19-22,  2017,  Pro-ceedings, volume 10173 ofLecture Notes in Computer Science*, pages 422–437. Springer, 2017
 
-**[3]** A. Liefooghe, S. V ́erel, L. Paquete, and J. Hao. Experiments on local search for bi-objective unconstrainedbinary quadratic programming. In A. Gaspar-Cunha, C. H. Antunes, and C. A. C. Coello, editors, *Evolutionary Multi-Criterion Optimization - 8th International Conference, EMO 2015, Guimaraes, Portugal,March 29 -April 1, 2015. Proceedings, Part I, volume 9018 ofLecture Notes in Computer Science*, pages 171–186. Springer, 2015
+**[3]** A. Liefooghe, S. Verel, L. Paquete, and J. Hao. Experiments on local search for bi-objective unconstrainedbinary quadratic programming. In A. Gaspar-Cunha, C. H. Antunes, and C. A. C. Coello, editors, *Evolutionary Multi-Criterion Optimization - 8th International Conference, EMO 2015, Guimaraes, Portugal,March 29 -April 1, 2015. Proceedings, Part I, volume 9018 ofLecture Notes in Computer Science*, pages 171–186. Springer, 2015
 
 **[4]** Q. Zhang and H. Li. MOEA/D: A multiobjective evolutionary algorithm based on decomposition.*IEEE Trans. Evolutionary Computation*, 11(6):712–731, 2007
