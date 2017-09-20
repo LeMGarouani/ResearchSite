@@ -1,4 +1,4 @@
- Doc  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/jbuisine/ResearchSite/blob/master/LICENSE)
+ [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/jbuisine/ResearchSite/blob/master/LICENSE)
 
 # Research Site
 
