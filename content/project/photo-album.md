@@ -239,7 +239,7 @@ disadvantages.
 For all of these algorithms, we will use the term or . This term
 indicates the dominance relation of solutions. A solution $\phi \in S_n$
 is dominated by a solution $\phi&#39; \in S_n$, denoted as $\phi \prec
-\phi&#39;$, if $f_k(\phi&#39;) <= f_k(\phi)$ for all $k \in [1,2]$, with at
+\phi&#39;$ if $f_k(\phi&#39;) <= f_k(\phi)$ for all $k \in [1,2]$, with at
 least one strict inequality. If neither $\phi \not\prec \phi&#39;$ nor
 $\phi&#39; \not\prec \phi$ holds, then both solutions are *mutually
 non-dominated*.

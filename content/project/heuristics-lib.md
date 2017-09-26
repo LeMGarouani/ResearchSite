@@ -6,7 +6,7 @@ date = "2016-07-02"
 title = "Meta Heuristics library"
 
 # Project summary to display on homepage.
-summary = "Implementation of operations research algorithms in C++"
+summary = "Implementation of operations research meta heuristics algorithms in C++ (Such as examples tabu search, simulated annealing, meta local search...)"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "projects/post-it-yellow.jpg"

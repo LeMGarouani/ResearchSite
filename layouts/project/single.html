@@ -1,0 +1,39 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+
+<article class="article article-project" itemscope itemtype="http://schema.org/Article">
+
+  {{ partial "header_image.html" . }}
+
+  <div class="container">
+    <div class="row">
+      <div id="toc" class="well col-md-4 col-sm-6 hidden-sm">
+          {{ .TableOfContents }}
+      </div>
+      <div class="col-md-8 col-sm-12">
+        <div class="pub-title">
+          <h1 itemprop="name">{{ .Title }}</h1>
+          <span class="pub-authors" itemprop="author">&nbsp;</span>
+          <span class="pull-right">
+            {{ partial "share.html" . }}
+          </span>
+        </div>
+
+        {{ with .Params.external_link }}
+        <a class="btn btn-primary btn-outline" href="{{ . }}" target="_blank">{{ i18n "open_project_site" }}</a>
+        {{ end }}
+
+        <div class="article-style" itemprop="articleBody">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<div class="container">
+  {{ partial "section_pager.html" . }}
+</div>
+
+{{ partial "footer_container.html" . }}
+{{ partial "footer.html" . }}
