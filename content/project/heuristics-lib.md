@@ -9,7 +9,7 @@ title = "Meta Heuristics library"
 summary = "Implementation of operations research algorithms in C++"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-#image_preview = "bubbles.jpg"
+image_preview = "projects/post-it-yellow.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`

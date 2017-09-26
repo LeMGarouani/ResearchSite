@@ -9,7 +9,7 @@ title = "Multi-objective optimization based on photo album QAP"
 summary = "Comparisons of multi-objective algorithms based on photo album QAP such as MOEA/D and TP-LS"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-#image_preview = "bubbles.jpg"
+image_preview = "projects/post-it-green.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
@@ -34,6 +34,8 @@ __Supervisors__ : F. Teytaud, S. Verel.
 __Author__ : Jérôme Buisine, IT Student at ULCO Calais.
 
 ***
+
+[![Github - project](https://img.shields.io/badge/Github-project-blue.svg)](https://github.com/jbuisine/RO.PhotoAlbumProject)
 
 [![Download: report](https://img.shields.io/badge/download-report-lightgrey.svg)](/sources/projects/album-photo/M1_PhotoAlbumProject.pdf)
 
