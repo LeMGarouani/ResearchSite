@@ -33,4 +33,9 @@ view = 1
 #  name = "Artificial Intelligence"
 #  tag = ".artificial-intelligence"
 
+
+[[filter]]
+  name = "School"
+  tag = ".school"
+
 +++

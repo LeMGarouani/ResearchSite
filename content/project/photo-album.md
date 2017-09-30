@@ -13,10 +13,20 @@ image_preview = "projects/post-it-green.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["operations-research"]
+tags = ["operations-research", "school"]
 
 # Optional external URL for project (replaces project detail page).
-external_link = ""
+external_links = [
+      [
+        "https://github.com/jbuisine/RO.PhotoAlbumProject", "Github", "project", "blue"
+      ],
+      [
+        "/sources/projects/album-photo/M1_PhotoAlbumProject.pdf", "Download", "report", "lightgrey"
+      ],
+      [
+        "/sources/projects/album-photo/M1_PhotoAlbumProjectDiapo.pdf", "Download", "presentation", "lightgrey"
+      ]
+    ]
 
 # Does the project detail page use math formatting?
 math = false
@@ -35,11 +45,6 @@ __Author__ : Jérôme Buisine, IT Student at ULCO Calais.
 
 ***
 
-[![Github - project](https://img.shields.io/badge/Github-project-blue.svg)](https://github.com/jbuisine/RO.PhotoAlbumProject)
-
-[![Download: report](https://img.shields.io/badge/download-report-lightgrey.svg)](/sources/projects/album-photo/M1_PhotoAlbumProject.pdf)
-
-[![Download: report](https://img.shields.io/badge/download-presentation-lightgrey.svg)](/sources/projects/album-photo/M1_PhotoAlbumProjectDiapo.pdf)
 Abstract
 ========
 

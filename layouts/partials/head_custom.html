@@ -22,7 +22,7 @@
 <style type="text/css">
 
 body {
-  font-size: 0.8rem;
+  font-size: 0.71rem;
 }
 
 h1{
@@ -64,16 +64,28 @@ h1{
   padding-right: 0;
 }
 
-#toc li{
-  list-style-type: circle ;
-  font-size: 0.7rem;
-}
+/* Table of contents of project pages */
 
 #toc{
   position: sticky;
-  top: 4.1rem;
+  top: 4.0rem;
   z-index: 1000;
   right:-1;
+}
+
+#toc li{
+  list-style-type: circle;
+  font-size: 0.7rem;
+}
+
+#toc li a{
+  color:#000;
+  text-decoration: none !important;
+}
+
+#toc li a:hover{
+  color:#337ab7;
+  text-decoration: none !important;
 }
 
 #toc.well{
@@ -81,6 +93,22 @@ h1{
   padding-bottom: 0px !important;
 }
 
+/* Filters home section */
+#filters a{
+  background-color: #A4A4A4;
+  font-size: 0.65rem;
+}
+#filters a.active{
+  background-color: grey;
+}
+
+#filters a:not(:first-child) {
+  border-left: grey 2px solid;
+}
+
+.home-section{
+  padding: 100px 0 100px 0;
+}
 .container .row{
   padding-top:20px;
 }
