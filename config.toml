@@ -17,6 +17,8 @@ googleAnalytics = ""
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
+pygmentsStyle="vs"
+pygmentsCodeFences = true
 [blackfriday]
   hrefTargetBlank = true
 
@@ -183,7 +185,7 @@ defaultContentLanguageInSubdir = false
   name = "Contact"
   url = "#contact"
   weight = 3
-  
+
 # Taxonomies.
 [taxonomies]
   tag = "tags"

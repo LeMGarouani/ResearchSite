@@ -9,14 +9,24 @@ title = "Multi-objective optimization based on photo album QAP"
 summary = "Comparisons of multi-objective algorithms based on photo album QAP such as MOEA/D and TP-LS"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-#image_preview = "bubbles.jpg"
+image_preview = "projects/post-it-green.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["operations-research"]
+tags = ["operations-research", "school"]
 
 # Optional external URL for project (replaces project detail page).
-external_link = ""
+external_links = [
+      [
+        "https://github.com/jbuisine/RO.PhotoAlbumProject", "Github", "project", "blue"
+      ],
+      [
+        "/sources/projects/album-photo/M1_PhotoAlbumProject.pdf", "Download", "report", "lightgrey"
+      ],
+      [
+        "/sources/projects/album-photo/M1_PhotoAlbumProjectDiapo.pdf", "Download", "presentation", "lightgrey"
+      ]
+    ]
 
 # Does the project detail page use math formatting?
 math = false
@@ -35,9 +45,6 @@ __Author__ : Jérôme Buisine, IT Student at ULCO Calais.
 
 ***
 
-[![Download: report](https://img.shields.io/badge/download-report-lightgrey.svg)](/sources/projects/album-photo/M1_PhotoAlbumProject.pdf)
-
-[![Download: report](https://img.shields.io/badge/download-presentation-lightgrey.svg)](/sources/projects/album-photo/M1_PhotoAlbumProjectDiapo.pdf)
 Abstract
 ========
 
@@ -237,7 +244,7 @@ disadvantages.
 For all of these algorithms, we will use the term or . This term
 indicates the dominance relation of solutions. A solution $\phi \in S_n$
 is dominated by a solution $\phi&#39; \in S_n$, denoted as $\phi \prec
-\phi&#39;$, if $f_k(\phi&#39;) <= f_k(\phi)$ for all $k \in [1,2]$, with at
+\phi&#39;$ if $f_k(\phi&#39;) <= f_k(\phi)$ for all $k \in [1,2]$, with at
 least one strict inequality. If neither $\phi \not\prec \phi&#39;$ nor
 $\phi&#39; \not\prec \phi$ holds, then both solutions are *mutually
 non-dominated*.
