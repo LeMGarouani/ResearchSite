@@ -1,6 +1,6 @@
 +++
 # Date this page was created.
-date = "2016-07-02"
+date = "2017-09-18"
 
 # Project title.
 title = "Multi-objective optimization based on photo album QAP"
