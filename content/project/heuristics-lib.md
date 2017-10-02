@@ -1,6 +1,6 @@
 +++
 # Date this page was created.
-date = "2016-07-02"
+date = "2017-10-02"
 
 # Project title.
 title = "Meta Heuristics library"
@@ -35,7 +35,7 @@ caption = "Meta Heuristics library"
 
 # Description
 
-The aim of the project is to offer some operations research Heuristics for mono or multiple objectives problems. Used as a generic cpp library, this project can be improve for your own needs.
+The aim of the project is to offer some operations research metaheuristics for mono or multiple objectives problems. Used as a generic cpp library, this project can be improve for your own needs.
 
 Into this library, for use Heuristic functions you have to declare your own fitness functions and if it's necessary your solution type based on Solution cpp class.
 
@@ -194,8 +194,7 @@ vector<C*>* getNonDominatedSols(vector<C*>* sols)
     -   _**Description :**_ Only for multi objective problem, this method returns all non dominated solutions from a set of solutions.
         -   *return :* all non dominated solutions.
 
-
-## Create your own metaheuristics
+## Create your own metaheuristic
 
 If you want to create your own metaheuristic class which contains multiple versions and implementations of a specific metaheuristics, you can create your own subclass of *Heuristics* class :
 
@@ -212,6 +211,63 @@ An important thing you need to do, is to define your new constructor based into 
 YourMetaHeuristic(bool problem_type, vector<Fitness>& funcs, int size)
   : Heuristics<C>(problem_type, funcs, size){}
 ```
+
+## Metaheuristics developed
+
+### MetaLocalSearch
+
+  - ```
+    runMultiStart(int nbEvaluation, Local localSearch, int nbIterationLocal);
+    ```
+    <br>**Description** : Multi start local search implementation.
+    <br><br>
+  - ```
+    runILS(int nbEvaluation, int nbPerturbation, Local localSearch, int nbIterationLocal);
+    ```
+    <br>**Description** : Iterated local search implementation.
+    <br><br>
+  - ```
+    runDVN(C* solution, Local localSearch, int nbIterationLocal);
+    ```
+    <br>**Description** : Descent variable neighborhoods implementation.
+    <br><br>
+  - ```
+    runSVNBase(int nbEvaluation, int kMax, Local localSearch, int nbIterationLocal);
+    ```
+    <br>**Description** : Search for variable neighborhoods base version.
+    <br><br>
+  - ```
+    runSVNGeneral(int nbEvaluation, int kMax, Local localSearch, int nbIterationLocal);
+    ```
+    <br>**Description** : Search for variable neighborhoods general version (using DVN).
+    <br><br>
+  - ```
+    runSVNReduce(int nbEvaluation, int kMax);
+    ```
+    <br>**Description** : Search for variable neighborhoods reduce version (without local search).
+    <br><br>
+
+### SimulatedAnnealing
+
+  - ```
+    run(int nbEvaluation, double temperature, double minTemperature, double alpha);
+    ```
+    <br>**Description** : Simulated annealing simple implementation.
+    <br><br>
+
+### MetaLocalSearch
+
+  - ```
+    runStrongMemory(int nbEvaluation, int nbMovement, int nbPerturbation);
+    ```
+    <br>**Description** : Tabu search implementation with strong memory.
+    <br><br>
+  - ```
+    runAdaptableMemory(int nbEvaluation, int nbMovement, int nbPerturbation, int tabuCounter);
+    ```
+    <br>**Description** : Tabu search implementation with memory counter.
+    <br><br>
+
 
 # Some examples
 ## Simulated annealing
