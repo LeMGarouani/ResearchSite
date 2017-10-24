@@ -55,7 +55,7 @@ This library uses template C++ engine. A *Solution* class file is an abstract cl
 
 ## Create Solution
 
-As explained the *Solution* class is the generic class which represents the solution of an optimization problem.
+As explained the *Solution* class is the generic class which represents the solution of an optimisation problem.
 
 *Solution* class represents your solution as an array of type **T**.
 
@@ -107,9 +107,26 @@ Below an example of a metaheuristics which uses a local search algorithm.
 C* run(int nbEvaluation, int nbPerturbation, Local localSearch, int nbIterationLocal);
 ```
 
+## Operator
+
+Into some metaheuristics you want to change solution state by using such as example crossover operators, mutation operators. Especially for Evolutionary Algorithms, you can used existing Operator or your owns you have created. Below the definition expected of this operator function.
+
+```cpp
+typedef C* (Operator)(C* fstSol, C* sndSol);
+```
+
+If you want to declare your owns operators you need to respect this signature. Some famous operators are available into [EAOperators.hpp](https://github.com/jbuisine/MetaHeuristicsLibrary/blob/master/src/algorithms/operators/EAOperators.hpp) file as static methods.
+Note that you can specify a method into Solution class which will be used dynamically into your Operator function using polymorphism (like used into EAOperators.hpp file).
+
+Below an example of a metaheuristics which uses a local search algorithm.
+
+```cpp
+C* run(int mu, int lambda, int iteration, Operator crossover, Operator mutation, Local localSearch, int nbIterationLocal);
+```
+
 ## Fitness definition
 
-Each solution of an optimization problem are evaluated with a fitness to obtain the score of this solution. This library contains a fitness type :
+Each solution of an optimisation problem are evaluated with a fitness to obtain the score of this solution. This library contains a fitness type :
 
 ```cpp
 typedef double (*Fitness)(long);
@@ -268,6 +285,13 @@ YourMetaHeuristic(bool problem_type, vector<Fitness>& funcs, int size)
     <br>**Description** : Tabu search implementation with memory counter.
     <br><br>
 
+### EvolutionaryAlgorithm
+
+  - ```
+    C* runSimple(int mu, int lambda, int iteration, Operator crossover, Operator mutation, Local localSearch, int nbIterationLocal);
+    ```
+    <br>**Description** : Evolutionary Algorithm simple implementation using customized Operator.
+    <br><br>
 
 # Some examples
 ## Simulated annealing
@@ -342,6 +366,6 @@ Some metaheuristics have multiple versions with their own advantages for each sp
 
 # Conclusion
 
-This library wants to become your operations research library for solving your optimization problems. New metaheuristics can be found each day, this library aim is to propose an implementation of this discovery.
+This library wants to become your operations research library for solving your optimisation problems. New metaheuristics can be found each day, this library aim is to propose an implementation of this discovery.
 
 Meta Heuristic library project is now at version v0.2.1. Do not hesitate to give me feedback about another way we can imagine make this library to be more generic and adaptable.
