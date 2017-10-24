@@ -368,4 +368,4 @@ Some metaheuristics have multiple versions with their own advantages for each sp
 
 This library wants to become your operations research library for solving your optimisation problems. New metaheuristics can be found each day, this library aim is to propose an implementation of this discovery.
 
-Meta Heuristic library project is now at version v0.2.1. Do not hesitate to give me feedback about another way we can imagine make this library to be more generic and adaptable.
+Meta Heuristic library project is now at version v0.2.2. Do not hesitate to give me feedback about another way we can imagine make this library to be more generic and adaptable.
