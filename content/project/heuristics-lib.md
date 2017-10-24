@@ -1,6 +1,6 @@
 +++
 # Date this page was created.
-date = "2017-10-02"
+date = "2017-10-24"
 
 # Project title.
 title = "Meta Heuristics library"
@@ -290,7 +290,7 @@ YourMetaHeuristic(bool problem_type, vector<Fitness>& funcs, int size)
   - ```
     C* runSimple(int mu, int lambda, int iteration, Operator crossover, Operator mutation, Local localSearch, int nbIterationLocal);
     ```
-    <br>**Description** : Evolutionary Algorithm simple implementation using customized Operator.
+    <br>**Description** : Evolutionary Algorithm simple implementation using customized operators.
     <br><br>
 
 # Some examples
