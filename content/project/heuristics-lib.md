@@ -107,6 +107,22 @@ Below an example of a metaheuristics which uses a local search algorithm.
 C* run(int nbEvaluation, int nbPerturbation, Local localSearch, int nbIterationLocal);
 ```
 
+## Selector
+
+Into some metaheuristics, especially for Evolutionary Algorithms, you want to select lambda solutions from mu population in order to generate your new population for next generation. With this library, you can used existing Selectors or your owns you have created. Below the definition expected of this selector function.
+
+```cpp
+typedef std::vector<int>* (Operator)(std::vector<double>* muScores, int lambda);
+```
+
+If you want to declare your owns selectors you need to respect this signature. Some famous selectors are available into [EASelectors.hpp](https://github.com/jbuisine/MetaHeuristicsLibrary/blob/master/src/algorithms/operators/EASelectors.hpp) file as static methods.
+
+Below an example of a metaheuristics which uses selector.
+
+```cpp
+C* run(int mu, int lambda, int iteration, Selector selector, Local localSearch, int nbIterationLocal);
+```
+
 ## Operator
 
 Into some metaheuristics you want to change solution state by using such as example crossover operators, mutation operators. Especially for Evolutionary Algorithms, you can used existing Operator or your owns you have created. Below the definition expected of this operator function.
@@ -118,7 +134,7 @@ typedef C* (Operator)(C* fstSol, C* sndSol);
 If you want to declare your owns operators you need to respect this signature. Some famous operators are available into [EAOperators.hpp](https://github.com/jbuisine/MetaHeuristicsLibrary/blob/master/src/algorithms/operators/EAOperators.hpp) file as static methods.
 Note that you can specify a method into Solution class which will be used dynamically into your Operator function using polymorphism (like used into EAOperators.hpp file).
 
-Below an example of a metaheuristics which uses a local search algorithm.
+Below an example of a metaheuristics which uses operators.
 
 ```cpp
 C* run(int mu, int lambda, int iteration, Operator crossover, Operator mutation, Local localSearch, int nbIterationLocal);
@@ -288,9 +304,9 @@ YourMetaHeuristic(bool problem_type, vector<Fitness>& funcs, int size)
 ### EvolutionaryAlgorithm
 
   - ```
-    C* runSimple(int mu, int lambda, int iteration, Operator crossover, Operator mutation, Local localSearch, int nbIterationLocal);
+    C* runSimple(int mu, int lambda, int iteration, Selector selector, Operator crossover, Operator mutation, Local localSearch, int nbIterationLocal);
     ```
-    <br>**Description** : Evolutionary Algorithm simple implementation using customized operators.
+    <br>**Description** : Evolutionary Algorithm simple implementation using customized selector, operators and local search.
     <br><br>
 
 # Some examples
