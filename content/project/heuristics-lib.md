@@ -1,6 +1,6 @@
 +++
 # Date this page was created.
-date = "2017-10-24"
+date = "2017-11-05"
 
 # Project title.
 title = "Meta Heuristics library"
@@ -304,9 +304,9 @@ YourMetaHeuristic(bool problem_type, vector<Fitness>& funcs, int size)
 ### EvolutionaryAlgorithm
 
   - ```
-    C* runSimple(int mu, int lambda, int iteration, Selector selector, Operator crossover, Operator mutation, Local localSearch, int nbIterationLocal);
+    C* runSimple(int mu, int lambda, int iteration, Selector childrenSelector, Selector generationSelector, Operator crossover, Operator mutation, Local localSearch, int nbIterationLocal);
     ```
-    <br>**Description** : Evolutionary Algorithm simple implementation using customized selector, operators and local search.
+    <br>**Description** : Evolutionary Algorithm simple implementation using customized selectors, operators and local search.
     <br><br>
 
 # Some examples
@@ -384,4 +384,4 @@ Some metaheuristics have multiple versions with their own advantages for each sp
 
 This library wants to become your operations research library for solving your optimisation problems. New metaheuristics can be found each day, this library aim is to propose an implementation of this discovery.
 
-Meta Heuristic library project is now at version v0.2.2. Do not hesitate to give me feedback about another way we can imagine make this library to be more generic and adaptable.
+Meta Heuristic library project is now at version v0.2.4. Do not hesitate to give me feedback about another way we can imagine make this library to be more generic and adaptable.
