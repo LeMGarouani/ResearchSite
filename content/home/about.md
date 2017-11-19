@@ -23,15 +23,21 @@ weight = 1
 #  institution = "ULCO Calais"
 #  year = 2016
 
+
 [[education.courses]]
-  course = "Bachelor of IT"
-  institution = "Saint Joseph High school"
+  course = "Master's degree in IT, 2016 - present"
+  institution = "ULCO Calais, France"
+
+[[education.courses]]
+  course = "Bachelor in IT"
+  institution = "Saint Joseph High school, France"
   year = 2016
 
 [[education.courses]]
   course = "Two-year technical degree in IT"
-  institution = "Saint Joseph High school"
+  institution = "Saint Joseph High school, France"
   year = 2015
+
 
 +++
 
