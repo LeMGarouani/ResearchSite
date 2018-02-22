@@ -16,3 +16,6 @@ content/**/*.html
 .Rhistory
 public/*
 .RData
+
+# JetBrains
+.idea/*

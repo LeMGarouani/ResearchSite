@@ -33,7 +33,6 @@ pygmentsCodeFences = true
   address = "6 chemin des trois cornets, 62630 Etaples, France"
   #office_hours = " email for appointment"
   phone = "+33 6 78 99 46 80"
-  #skype = "echo123"
   telegram = ""
 
   # Enable Keybase in Contact section by entering your keybase.io username.
@@ -142,16 +141,6 @@ pygmentsCodeFences = true
     icon_pack = "fa"
     link = "//github.com/jbuisine"
 
-#  [[params.social]]
-#    icon = "twitter"
-#    icon_pack = "fa"
-#    link = "//twitter.com/JeromeBuisine"
-
-#  [[params.social]]
-#    icon = "google-scholar"
-#    icon_pack = "ai"
-#    link = "https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ"
-
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
 #     desired widget in your `content/home/` folder.
@@ -162,29 +151,20 @@ pygmentsCodeFences = true
   url = "#about"
   weight = 1
 
-#[[menu.main]]
-#  name = "Publications"
-#  url = "#publications_selected"
-#  weight = 2
-#[[menu.main]]
-#  name = "Posts"
-#  url = "#posts"
-#  weight = 3
-
 [[menu.main]]
   name = "Projects"
   url = "#projects"
   weight = 2
 
-#[[menu.main]]
-#  name = "Teaching"
-#  url = "#teaching"
-#  weight = 5
+[[menu.main]]
+  name = "Courses"
+  url = "#courses"
+  weight = 3
 
 [[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 3
+  weight = 4
 
 # Taxonomies.
 [taxonomies]
