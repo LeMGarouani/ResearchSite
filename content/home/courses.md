@@ -14,7 +14,8 @@ weight = 60
 
 +++
 
-Here you can find some support I have wrote :
+## Artificial Intelligence
+- [05 : Constraints Programming](/sources/courses/ai/AI___5_ConstraintsProgramming.pdf)
 
-1.  Artificial Intelligence
-    - [05 : Constraints Programming](/sources/courses/ai/AI___5_ConstraintsProgramming.pdf)
+## Operations Research
+- ...
