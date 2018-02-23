@@ -14,8 +14,19 @@ weight = 60
 
 +++
 
-## Artificial Intelligence
+### Artificial Intelligence
+- 00 : History
+- 01 : Intelligent Agents
+- 02 : Heuristic search
+- 03 : Local search
+- 04 : Adversarial search
 - [05 : Constraints Programming](/sources/courses/ai/AI___5_ConstraintsProgramming.pdf)
 
-## Operations Research
+### Operations Research
+- 00 : History
+- 01 : Modelization
+- 02 : Local Search
+- 03 : Metaheuristics
+- 04 : Genetic Algorithm
+- 05 : Multi objective problem
 - ...
