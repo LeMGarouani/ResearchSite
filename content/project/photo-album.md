@@ -6,7 +6,7 @@ date = "2017-09-18"
 title = "Multi-objective optimization based on photo album QAP"
 
 # Project summary to display on homepage.
-summary = "Comparisons of multi-objective algorithms based on photo album QAP such as MOEA/D and TP-LS"
+summary = "Comparisons of multi-objective algorithms based on photo album QAP instances such as MOEA/D and TP-LS"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "projects/post-it-green.jpg"
