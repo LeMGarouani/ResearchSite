@@ -43,16 +43,16 @@ The final approach of this project is to introduce a new way of using MAB algori
 
 It's a cmake project, so you only need to :
 
-```commandline
+```
 mkdir build
 ```
 
-```commandline
+```
 cd build 
 ```
 
 And then : 
-```commandline
+```
 cmake 
 ```
 
