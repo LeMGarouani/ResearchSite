@@ -25,14 +25,14 @@ view = 1
   name = "All"
   tag = "*"
 
+
+[[filter]]
+  name = "Artificial Intelligence"
+  tag = ".artificial-intelligence"
+
 [[filter]]
   name = "Operations Research"
   tag = ".operations-research"
-
-#[[filter]]
-#  name = "Artificial Intelligence"
-#  tag = ".artificial-intelligence"
-
 
 [[filter]]
   name = "School"
