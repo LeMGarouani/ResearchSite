@@ -274,3 +274,13 @@ pygmentsCodeFences = true
 # Configure the English version of the website.
 [Languages.en]
   languageCode = "en-uk"
+
+#[Languages.fr]
+#  languageCode = "fr"
+
+
+map = 1
+map_api_key = ""
+latitude = "50.51531804109467"
+longitude = "1.6496527573114008"
+zoom = 15
