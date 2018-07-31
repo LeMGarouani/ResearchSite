@@ -9,7 +9,7 @@ title = "MO Photo Album project V2"
 summary = "Second version of photo album QAP using ParadisEO C++ library in order to make statistics faster (MOEA/D, NSGA-II, Adaptative Operator Selection)."
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "projects/post-it-yellow.jpg"
+#image_preview = "projects/post-it-yellow.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`

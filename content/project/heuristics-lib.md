@@ -9,7 +9,7 @@ title = "Meta Heuristics library"
 summary = "Implementation of operations research meta heuristics algorithms in C++ (Such as examples tabu search, simulated annealing, meta local search...)"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "projects/post-it-yellow.jpg"
+#image_preview = "projects/post-it-yellow.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`

@@ -9,7 +9,7 @@ title = "FRRMAB directions knowledge"
 summary = "Adaptive Operator Selection into the MOEA/D algorithm. This AOS called FRRMAB_DK is based on MAB algorithm for each sub problem with shares of information."
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "projects/post-it-yellow.jpg"
+#image_preview = "projects/post-it-yellow.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`

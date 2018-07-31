@@ -46,18 +46,18 @@ pygmentsCodeFences = true
 [params]
   # Color theme.
   #   Choose from `default`, `ocean`, `forest`, `coffee`, `dark`, or `1950s`.
-  color_theme = "ocean"
+  color_theme = "default"
 
   # Font style.
   #   Choose from `default`, `classic`, or `playfair`.
   font = "default"
 
   name = "Jérôme Buisine"
-  role = "IT Student in Master's degree"
+  role = "PhD student in IA"
   organization = "ULCO Calais"
   organization_url = ""
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
-  avatar = "profil.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  avatar = "profile2.png"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "contact@jeromebuisine.fr"
   address = "6 chemin des trois cornets, 62630 Etaples, France"
   #office_hours = " email for appointment"
