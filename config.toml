@@ -168,7 +168,8 @@ pygmentsCodeFences = true
     'Manuscript',  # 3
     'Report',  # 4
     'Book',  # 5
-    'Book section'  # 6
+    'Book section',  # 6
+    'Thesis'  # 7
   ]
 
   # Configuration of talk pages.
@@ -258,19 +259,24 @@ pygmentsCodeFences = true
 #  weight = 2
 
 [[menu.main]]
+  name = "Reseach"
+  url = "#thesis"
+  weight = 2
+
+[[menu.main]]
   name = "Projects"
   url = "#projects"
-  weight = 2
+  weight = 3
 
 [[menu.main]]
   name = "Courses"
   url = "#courses"
-  weight = 3
+  weight = 4
 
 [[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 4
+  weight = 5
 
 
 # Taxonomies.
