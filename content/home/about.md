@@ -13,8 +13,10 @@ weight = 1
 [interests]
   interests = [
     "Artificial Intelligence",
+    "Machine learning",
+    "Deep learning",
     "Operations Research",
-    "New technologies"
+    "New technologies..."
   ]
 
 # List your qualifications (such as academic degrees).
@@ -24,11 +26,11 @@ weight = 1
 #  year = 2016
 
 [[education.courses]]
-  course = "PhD stuent in IA, Sep. 2018 - present"
+  course = "PhD student in IA, Sep. 2018 - present"
   institution = "ULCO Calais, France"
 
 [[education.courses]]
-  course = "Master's degree in IT, 2016 - 2018"
+  course = "Master's degree in IT (high honors), 2016 - 2018"
   institution = "ULCO Calais, France"
 
 [[education.courses]]
@@ -46,4 +48,4 @@ weight = 1
 
 # Biography
 
-I'm a passionate IT student in Master's degree. I'm fond of computer sciences and particularly domains of Artificial Intelligence and Operations Research. I read a lot of books during my free time and sometimes collaborate into the IT free world. My goal is to continue in this vast domain of IT research. 
+I'm a passionate IT student in Master's degree. I'm fond of computer sciences and particularly domains of Artificial Intelligence and Operations Research. I read a lot of books during my free time and sometimes collaborate into the IT free world. My goal is to continue in this vast domain of IT research.
