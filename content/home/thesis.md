@@ -6,7 +6,7 @@ active = true
 date = 2018-07-05
 
 title = "Research : Thesis"
-subtitle = "ULCO Calais : 2018 - present"
+subtitle = "2018 - present"
 folder = "thesis"
 
 

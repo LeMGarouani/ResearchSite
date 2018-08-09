@@ -6,7 +6,7 @@ date = "2016-04-20T00:00:00"
 draft = false
 
 title = "Courses"
-subtitle = "All courses written during reading"
+subtitle = "All courses written while reading"
 widget = "custom"
 
 # Order that this section will appear in.

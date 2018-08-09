@@ -5,6 +5,9 @@
 
   {{ partial "header_image.html" . }}
 
+  <button class="btn btn-default show-slide" style="float:right; margin-right: 120px; margin-top: 30px;"><i class="fas fa-chalkboard"></i></i>
+</button>
+
   <div class="container">
     <div class="row">
       <div id="toc" class="well col-md-4 col-sm-6 hidden-sm hidden-xs">
@@ -42,9 +45,31 @@
   </div>
 </article>
 
+<textarea id="source">
+</textarea>
+
 <!--<div class="container">
   {{ partial "section_pager.html" . }}
 </div>-->
+
+
+<script>
+
+ $('#source').hide();
+
+ $('.show-slide').click(function(){
+
+    var slideshow = remark.create({
+      sourceUrl: {{ $.Params.slide_link }},
+      highlightStyle: 'tomorrow-night',
+    });
+
+    $('article').hide();
+    $('footer').hide();
+    $('nav').hide();
+ });
+
+</script>
 
 {{ partial "footer_container.html" . }}
 {{ partial "footer.html" . }}

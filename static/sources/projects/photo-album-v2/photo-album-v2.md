@@ -1,44 +1,21 @@
-+++
-# Date this page was created.
-date = "2017-11-18"
+layout: true
+.center[
+# MO Photo Album project V2
+]
 
-# Project title.
-title = "MO Photo Album project V2"
+---
+.left[
+### Summary
+Second version of photo album QAP using ParadisEO C++ library in order to make statistics faster (MOEA/D, NSGA-II, Adaptative Operator Selection).
 
-# Project summary to display on homepage.
-summary = "Second version of photo album QAP using ParadisEO C++ library in order to make statistics faster (MOEA/D, NSGA-II, Adaptative Operator Selection)."
-
-slide_link = "/sources/projects/photo-album-v2/photo-album-v2.md"
-
-# Optional image to display on homepage (relative to `static/img/` folder).
-#image_preview = "projects/post-it-yellow.jpg"
-
-# Tags: can be used for filtering projects.
-# Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["operations-research", "school"]
-
-# Optional external URL for project (replaces project detail page).
-external_links = [
-      [
-        "https://github.com/jbuisine/PhotoAlbumOR-v2", "Github", "project", "blue"
-      ]
-    ]
-
-# Does the project detail page use math formatting?
-math = false
-
-# Optional featured image (relative to `static/img/` folder).
-[header]
-#image = "headers/bubbles-wide.jpg"
-caption = "Photo album QAP v2"
-
-+++
-
-# Description
+### Description
 
 Relative to the [first version](https://github.com/jbuisine/RO.PhotoAlbumProject/blob/master/www/modules/routes/solution.js) project which contains client interface. This second version is created to improve performance using c++ ParadisEO library and found best AOS (adaptive operators strategy) for this real problem.
 
 So, some statistics will be generated in order to compare the different AOS known and perhaps propose a new one.
+]
+
+---
 
 # Installation
 
@@ -50,6 +27,7 @@ This project is a cmake project. So you need to install all dependencies before 
 Some python scripts are used to run application or create new photo album. You also need some python dependencies :
 
 [Clarifai](https://www.clarifai.com/) dependency used for getting some information about your photo in order to compare them.
+
 ```
 pip install clarifai==2.0.20
 ```
@@ -65,6 +43,7 @@ And finally :
 mkdir build && cd build
 cmake ..
 ```
+---
 
 # Utilisation
 
@@ -78,6 +57,12 @@ Template folder structure :
 - solutions/*
 - album-disposition.json
 - info-photo.json
+
+---
+
+# Utilisation
+
+## Generate information
 
 ### 1. Clarifai API data
 Generate tags information from an template folder :
@@ -93,6 +78,12 @@ cd application/resources/photo-album
 python tag-clarifay.py templates/FirstTemplate <YOUR_CLARIFAI_API_KEY>
 ```
 
+---
+
+# Utilisation
+
+## Generate information
+
 ### 2. Generate info photo file
 
 In order to generate json file information about photos template, you need to run this command line :
@@ -100,11 +91,23 @@ In order to generate json file information about photos template, you need to ru
 python extractInfo.py <template-folder>
 ```
 
+---
+
+# Utilisation
+
+## Generate information
+
 ### 3. Generate disposition info file
 
 ```
 python disposition.py <template-folder> <output-filename> <x-axis-number-photos> <y-axis-number-photos> <number-of-pages>
 ```
+
+---
+
+# Utilisation
+
+## Generate information
 
 ### 4. Generate photo album
 
@@ -116,6 +119,8 @@ Example :
 ```
 python buildAlbum.py templates/FirstTemplate/ album-6-2per3.json chronologic-order.sol
 ```
+
+---
 
 # Licence
 

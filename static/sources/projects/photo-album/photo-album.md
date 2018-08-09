@@ -8,8 +8,6 @@ title = "Multi-objective optimization based on photo album QAP"
 # Project summary to display on homepage.
 summary = "Comparisons of multi-objective algorithms based on photo album QAP instances such as MOEA/D and TP-LS"
 
-slide_link = "/sources/projects/photo-album/photo-album.md"
-
 # Optional image to display on homepage (relative to `static/img/` folder).
 #image_preview = "projects/post-it-green.jpg"
 
@@ -23,10 +21,10 @@ external_links = [
         "https://github.com/jbuisine/RO.PhotoAlbumProject", "Github", "project", "blue"
       ],
       [
-        "/sources/projects/photo-album/M1_PhotoAlbumProject.pdf", "Download", "report", "lightgrey"
+        "/sources/projects/album-photo/M1_PhotoAlbumProject.pdf", "Download", "report", "lightgrey"
       ],
       [
-        "/sources/projects/photo-album/M1_PhotoAlbumProjectDiapo.pdf", "Download", "presentation", "lightgrey"
+        "/sources/projects/album-photo/M1_PhotoAlbumProjectDiapo.pdf", "Download", "presentation", "lightgrey"
       ]
     ]
 

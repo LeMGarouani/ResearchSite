@@ -1,39 +1,8 @@
-+++
-# Date this page was created.
-date = "2017-11-05"
+# Meta Heuristics library
 
-# Project title.
-title = "Meta Heuristics library"
-slide_link = "/sources/projects/heuristics-lib/heuristics-lib.md"
+Implementation of operations research meta heuristics algorithms in C++ (Such as examples tabu search, simulated annealing, meta local search...)
 
-# Project summary to display on homepage.
-summary = "Implementation of operations research meta heuristics algorithms in C++ (Such as examples tabu search, simulated annealing, meta local search...)"
-
-# Optional image to display on homepage (relative to `static/img/` folder).
-#image_preview = "projects/post-it-yellow.jpg"
-
-# Tags: can be used for filtering projects.
-# Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["operations-research"]
-
-# Optional external URL for project (replaces project detail page).
-external_links = [
-      [
-        "https://github.com/jbuisine/MetaHeuristicsLibrary", "Github", "project", "blue"
-      ]
-    ]
-
-# Does the project detail page use math formatting?
-math = false
-
-# Optional featured image (relative to `static/img/` folder).
-[header]
-#image = "headers/bubbles-wide.jpg"
-caption = "Meta Heuristics library"
-
-+++
-
-
+---
 
 # Description
 
@@ -41,7 +10,7 @@ The aim of the project is to offer some operations research metaheuristics for m
 
 Into this library, for use Heuristic functions you have to declare your own fitness functions and if it's necessary your solution type based on Solution cpp class.
 
-
+---
 
 # Installation
 
@@ -53,13 +22,13 @@ If you just want to use this library, you can download sources code and import t
 
 Then, all features of this library are now available !
 
-
+---
 
 # Documentation
 
 This library uses template C++ engine. A *Solution* class file is an abstract class with some virtual methods which need to be defined in any subclass.
 
-
+---
 
 ## Create Solution
 
@@ -99,7 +68,7 @@ class CombinatorySolution : public Solution<T> {
 }
 ```
 
-
+---
 
 ## Local search
 
@@ -117,7 +86,7 @@ Below an example of a metaheuristics which uses a local search algorithm.
 C* run(int nbEvaluation, int nbPerturbation, Local localSearch, int nbIterationLocal);
 ```
 
-
+---
 
 ## Selector
 
@@ -135,7 +104,7 @@ Below an example of a metaheuristics which uses selector.
 C* run(int mu, int lambda, int iteration, Selector selector, Local localSearch, int nbIterationLocal);
 ```
 
-
+---
 
 ## Operator
 
@@ -154,7 +123,7 @@ Below an example of a metaheuristics which uses operators.
 C* run(int mu, int lambda, int iteration, Operator crossover, Operator mutation, Local localSearch, int nbIterationLocal);
 ```
 
-
+---
 
 ## Fitness definition
 
@@ -181,13 +150,13 @@ double compute (long ptrToParam) {
 }
 ```
 
-
+---
 
 # Heuristics
 
 *Heuristics* class is abstract class of each metaheuristics inherits. You can define your problem configuration when you create an instance of a subclass of *Heuristics*.
 
-
+---
 
 ## Problem configuration
 
@@ -220,7 +189,7 @@ public:
 };
 ```
 
-
+---
 
 ## Utilities methods
 
@@ -249,13 +218,13 @@ vector<C*>* getNonDominatedSols(vector<C*>* sols)
     -   _**Description :**_ Only for multi objective problem, this method returns all non dominated solutions from a set of solutions.
         -   *return :* all non dominated solutions.
 
-
+---
 
 ## Create your own metaheuristic
 
 If you want to create your own metaheuristic class which contains multiple versions and implementations of a specific metaheuristics, you can create your own subclass of *Heuristics* class :
 
-```cpp
+```
 template<typename C>
 class YourMetaHeuristic : public Heuristics<C> {
   ...
@@ -264,12 +233,12 @@ class YourMetaHeuristic : public Heuristics<C> {
 
 An important thing you need to do, is to define your new constructor based into the *Heuristics* constructor to initialize context problem.
 
-```cpp
+```
 YourMetaHeuristic(bool problem_type, vector<Fitness>& funcs, int size)
   : Heuristics<C>(problem_type, funcs, size){}
 ```
 
-
+---
 
 ## Metaheuristics developed
 
@@ -306,7 +275,7 @@ YourMetaHeuristic(bool problem_type, vector<Fitness>& funcs, int size)
     <br>**Description** : Search for variable neighborhoods reduce version (without local search).
     <br><br>
 
-
+---
 
 ### SimulatedAnnealing
 
@@ -316,7 +285,7 @@ YourMetaHeuristic(bool problem_type, vector<Fitness>& funcs, int size)
     <br>**Description** : Simulated annealing simple implementation.
     <br><br>
 
-
+---
 
 ### MetaLocalSearch
 
@@ -331,7 +300,7 @@ YourMetaHeuristic(bool problem_type, vector<Fitness>& funcs, int size)
     <br>**Description** : Tabu search implementation with memory counter.
     <br><br>
 
-
+---
 
 ### EvolutionaryAlgorithm
 
@@ -341,7 +310,7 @@ YourMetaHeuristic(bool problem_type, vector<Fitness>& funcs, int size)
     <br>**Description** : Evolutionary Algorithm simple implementation using customized selectors, operators and local search.
     <br><br>
 
-
+---
 # Some examples
 ## Simulated annealing
 
@@ -370,7 +339,7 @@ BinaryCombinatorySolution<int>* s =
 s->diplaySolution();
 ```
 
-
+---
 
 ## Tabu search
 
@@ -399,7 +368,7 @@ BinaryCombinatorySolution<int>* s =
 s->diplaySolution();
 ```
 
-
+---
 
 ## QAP instance example
 
@@ -409,7 +378,7 @@ An example of how to use this QAP instance with the Meta Heuristics library is a
 
 An implementation of current metaheuristics implemented are also available.
 
-
+---
 
 # Contribution
 
@@ -419,7 +388,7 @@ If you want to contribute, this project use cMake build tool so if you use an ID
 
 Some metaheuristics have multiple versions with their own advantages for each specific kind of problem. If you see an alternative of one of these metaheuristics don't hesitate to fork this project and contribute to it ! It just wants to be enhanced !
 
-
+---
 
 # Conclusion
 

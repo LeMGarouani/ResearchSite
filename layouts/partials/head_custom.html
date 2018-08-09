@@ -5,6 +5,25 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/contrib/auto-render.min.js" integrity="sha384-RkgGHBDdR8eyBOoWeZ/vpGg1cOvSAJRflCUDACusAAIVwkwPrOUYykglPeqWakZu" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+<!-- Usefull for remark.js -->
+<style>
+  /*@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+  @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+  @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+  body { font-family: 'Droid Serif'; }
+  h1, h2, h3 {
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: normal;
+  }*/
+  .remark-slide-content { font-family: 'Ubuntu Mono';  font-size: 90%; }
+  .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; font-size: 90%;}
+
+</style>
+
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     var options = {
@@ -17,6 +36,8 @@
     renderMathInElement(document.body, options);
   });
 </script>
+
+<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
 
 <!-- Custom CSS -->
 <style type="text/css">
@@ -39,8 +60,14 @@ h3{
   margin-top: 12px;
 }
 
+pre {
+  padding: 0px !important;
+}
+
 pre code{
   font-size: 11.5px;
+  border-radius: 5px;
+  margin: 1px !important;
 }
 
 .pub-title h1{
