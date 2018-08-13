@@ -1,11 +1,18 @@
-# FRRMAB directions knowledge
-
-[![demo](https://img.shields.io/badge/Github-project-blue.svg?style=flat-square)](https://github.com/jbuisine/FRRMAB_DK.git)
-
-Adaptive Operator Selection into the MOEA/D algorithm. This AOS called FRRMAB_DK is based on MAB algorithm for each sub problem with shares of information.
+layout: true
+<div class="remark-header"><span><a href="" class="remark-quit-cross"><i class="fas fa-times fa-2x"></i></a></span></div>
+<div class="remark-footer"><span>Photo album project
+<a href="https://github.com/jbuisine/FRRMAB_DK.git" class="remark-icon-bottom"><i class="fab fa-github fa-1x"></i></a>
+</span></div>
 
 ---
-# Description
+class: center, middle
+# FRRMAB directions knowledge
+
+<hr>
+**Description** : Adaptive Operator Selection into the MOEA/D algorithm. This AOS called FRRMAB_DK is based on MAB algorithm for each sub problem with shares of information.
+
+---
+## Description
 
 This project wants to introduce a new approach in use of UCB Multi Armed Bandits algorithm into the  ***Multiobjective Evolutionnary Algorithm based on Decomposition*** (MOEA/D).
 This MAB algorithm brings an automatic selection of an operator (mutation/crossover ) used to generate new solution (offspring) in order to reduce time consuming and lead to best solutions of the search space.
@@ -14,7 +21,7 @@ The final approach of this project is to introduce a new way of using MAB algori
 
 ---
 
-# Installation
+## Installation
 
 It's a cmake project, so you only need to :
 
@@ -33,12 +40,12 @@ cmake
 
 ---
 
-# MOEA/D
+## MOEA/D
 
 For MOEA/D algorithm, QAP instances are generated following this available [generator](http://www.cs.bham.ac.uk/~jdk/mQAP/).
 
 ---
 
-# Licence
+## Licence
 
 [CeCILL](http://www.cecill.info/index.en.html)

@@ -36,7 +36,7 @@ caption = "Photo album QAP v2"
 
 # Description
 
-Relative to the [first version](https://github.com/jbuisine/RO.PhotoAlbumProject/blob/master/www/modules/routes/solution.js) project which contains client interface. This second version is created to improve performance using c++ ParadisEO library and found best AOS (adaptive operators strategy) for this real problem.
+Relative to the [first version](https://github.com/jbuisine/OR.PhotoAlbumProject/blob/master/www/modules/routes/solution.js) project which contains client interface. This second version is created to improve performance using c++ ParadisEO library and found best AOS (adaptive operators strategy) for this real problem.
 
 So, some statistics will be generated in order to compare the different AOS known and perhaps propose a new one.
 

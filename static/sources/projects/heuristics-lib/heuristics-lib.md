@@ -1,6 +1,8 @@
 layout: true
 <div class="remark-header"><span><a href="" class="remark-quit-cross"><i class="fas fa-times fa-2x"></i></a></span></div>
-<div class="remark-footer"><span>Meta Heuristics library<a href="" class="remark-icon-bottom"><i class="fas fa-times"></i></a><a href="" class="remark-icon-bottom"><i class="fas fa-times"></i></a></span></div>
+<div class="remark-footer"><span>Meta Heuristics library
+<a href="https://github.com/jbuisine/MetaHeuristicsLibrary" class="remark-icon-bottom"><i class="fab fa-github fa-1x"></i></a>
+</span></div>
 
 ---
 class: center, middle
@@ -10,7 +12,7 @@ class: center, middle
 
 ---
 
-# Description
+## Description
 
 The aim of the project is to offer some operations research metaheuristics for mono or multiple objectives problems. Used as a generic cpp library, this project can be improve for your own needs.
 
@@ -18,7 +20,7 @@ Into this library, for use Heuristic functions you have to declare your own fitn
 
 ---
 
-# Installation
+## Installation
 
 If you just want to use this library, you can download sources code and import the library just as below :
 
@@ -30,13 +32,14 @@ Then, all features of this library are now available !
 
 ---
 
-# Documentation
+## Documentation
 
 This library uses template C++ engine. A *Solution* class file is an abstract class with some virtual methods which need to be defined in any subclass.
 
 ---
 
-## Create Solution
+## Documentation
+### Create Solution
 
 As explained the *Solution* class is the generic class which represents the solution of an optimisation problem.
 
@@ -76,7 +79,8 @@ class CombinatorySolution : public Solution<T> {
 
 ---
 
-## Local search
+## Documentation
+### Local search
 
 Into some metaheuristics you need to declare a local search algorithm to improve solution at each iteration. To make it generic a *Local* type is defined. Below the definition expected of this local search algorithm.
 
@@ -94,7 +98,8 @@ C* run(int nbEvaluation, int nbPerturbation, Local localSearch, int nbIterationL
 
 ---
 
-## Selector
+## Documentation
+### Selector
 
 Into some metaheuristics, especially for Evolutionary Algorithms, you want to select lambda solutions from mu population in order to generate your new population for next generation. With this library, you can used existing Selectors or your owns you have created. Below the definition expected of this selector function.
 
@@ -112,7 +117,9 @@ C* run(int mu, int lambda, int iteration, Selector selector, Local localSearch, 
 
 ---
 
-## Operator
+
+## Documentation
+### Operator
 
 Into some metaheuristics you want to change solution state by using such as example crossover operators, mutation operators. Especially for Evolutionary Algorithms, you can used existing Operator or your owns you have created. Below the definition expected of this operator function.
 
@@ -131,7 +138,8 @@ C* run(int mu, int lambda, int iteration, Operator crossover, Operator mutation,
 
 ---
 
-## Fitness definition
+## Documentation
+### Fitness definition
 
 Each solution of an optimisation problem are evaluated with a fitness to obtain the score of this solution. This library contains a fitness type :
 
@@ -158,13 +166,13 @@ double compute (long ptrToParam) {
 
 ---
 
-# Heuristics
+## Heuristics
 
 *Heuristics* class is abstract class of each metaheuristics inherits. You can define your problem configuration when you create an instance of a subclass of *Heuristics*.
 
 ---
 
-## Problem configuration
+### Problem configuration
 
 Constructor of *Heuristics* class permits you to defined your problem :
 
@@ -253,36 +261,35 @@ YourMetaHeuristic(bool problem_type, vector<Fitness>& funcs, int size)
   - ```
     runMultiStart(int nbEvaluation, Local localSearch, int nbIterationLocal);
     ```
-    <br>**Description** : Multi start local search implementation.
+    **Description** : Multi start local search implementation.
     <br><br>
   - ```
     runILS(int nbEvaluation, int nbPerturbation, Local localSearch, int nbIterationLocal);
     ```
-    <br>**Description** : Iterated local search implementation.
+    **Description** : Iterated local search implementation.
     <br><br>
   - ```
     runDVN(C* solution, Local localSearch, int nbIterationLocal);
     ```
-    <br>**Description** : Descent variable neighborhoods implementation.
+    **Description** : Descent variable neighborhoods implementation.
     <br><br>
   - ```
     runSVNBase(int nbEvaluation, int kMax, Local localSearch, int nbIterationLocal);
     ```
-    <br>**Description** : Search for variable neighborhoods base version.
-    <br><br>
+    **Description** : Search for variable neighborhoods base version.
   - ```
     runSVNGeneral(int nbEvaluation, int kMax, Local localSearch, int nbIterationLocal);
     ```
-    <br>**Description** : Search for variable neighborhoods general version (using DVN).
+    **Description** : Search for variable neighborhoods general version (using DVN).
     <br><br>
   - ```
     runSVNReduce(int nbEvaluation, int kMax);
     ```
-    <br>**Description** : Search for variable neighborhoods reduce version (without local search).
-    <br><br>
+    **Description** : Search for variable neighborhoods reduce version (without local search).
 
 ---
 
+## Metaheuristics developed
 ### SimulatedAnnealing
 
   - ```
@@ -293,7 +300,8 @@ YourMetaHeuristic(bool problem_type, vector<Fitness>& funcs, int size)
 
 ---
 
-### MetaLocalSearch
+## Metaheuristics developed
+### Tabu search
 
   - ```
     runStrongMemory(int nbEvaluation, int nbMovement, int nbPerturbation);
@@ -308,6 +316,7 @@ YourMetaHeuristic(bool problem_type, vector<Fitness>& funcs, int size)
 
 ---
 
+## Metaheuristics developed
 ### EvolutionaryAlgorithm
 
   - ```
@@ -317,8 +326,9 @@ YourMetaHeuristic(bool problem_type, vector<Fitness>& funcs, int size)
     <br><br>
 
 ---
-# Some examples
-## Simulated annealing
+
+## Some examples
+### Simulated annealing
 
 Below an example of how you can throw a Simulated Annealing metaheuristic to solve your problem :
 
@@ -347,7 +357,8 @@ s->diplaySolution();
 
 ---
 
-## Tabu search
+## Some examples
+### Tabu search
 
 Below an example of how you can throw a Tabu Search metaheuristic with adaptable memory to solve your problem :
 
@@ -386,7 +397,7 @@ An implementation of current metaheuristics implemented are also available.
 
 ---
 
-# Contribution
+## Contribution
 
 Contribution is **open** !
 
@@ -396,7 +407,7 @@ Some metaheuristics have multiple versions with their own advantages for each sp
 
 ---
 
-# Conclusion
+## Conclusion
 
 This library wants to become your operations research library for solving your optimisation problems. New metaheuristics can be found each day, this library aim is to propose an implementation of this discovery.
 

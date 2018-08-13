@@ -1,23 +1,28 @@
 layout: true
-.center[
-# MO Photo Album project V2
-]
+<div class="remark-header"><span><a href="" class="remark-quit-cross"><i class="fas fa-times fa-2x"></i></a></span></div>
+<div class="remark-footer"><span>Photo album project V2
+<a href="https://github.com/jbuisine/PhotoAlbumOR-v2" class="remark-icon-bottom"><i class="fab fa-github fa-1x"></i></a>
+</span></div>
 
 ---
-.left[
-### Summary
-Second version of photo album QAP using ParadisEO C++ library in order to make statistics faster (MOEA/D, NSGA-II, Adaptative Operator Selection).
+class: center, middle
+# Photo album project V2
 
-### Description
+<hr>
+**Description**: Second version of photo album QAP using ParadisEO C++ library in order to make statistics faster (MOEA/D, NSGA-II, Adaptative Operator Selection).
 
-Relative to the [first version](https://github.com/jbuisine/RO.PhotoAlbumProject/blob/master/www/modules/routes/solution.js) project which contains client interface. This second version is created to improve performance using c++ ParadisEO library and found best AOS (adaptive operators strategy) for this real problem.
+---
+
+## Description
+
+Relative to the [first version](https://github.com/jbuisine/OR.PhotoAlbumProject/blob/master/www/modules/routes/solution.js) project which contains client interface. This second version is created to improve performance using c++ ParadisEO library and found best AOS (adaptive operators strategy) for this real problem.
 
 So, some statistics will be generated in order to compare the different AOS known and perhaps propose a new one.
 ]
 
 ---
 
-# Installation
+## Installation
 
 This project is a cmake project. So you need to install all dependencies before build it:
 
@@ -45,9 +50,9 @@ cmake ..
 ```
 ---
 
-# Utilisation
+## Utilisation
 
-## Generate information
+### Generate information
 
 First of all, you need to respect this folder template architecture :
 
@@ -60,11 +65,11 @@ Template folder structure :
 
 ---
 
-# Utilisation
+## Utilisation
 
-## Generate information
+### Generate information
 
-### 1. Clarifai API data
+#### 1. Clarifai API data
 Generate tags information from an template folder :
 
 ```
@@ -80,11 +85,11 @@ python tag-clarifay.py templates/FirstTemplate <YOUR_CLARIFAI_API_KEY>
 
 ---
 
-# Utilisation
+## Utilisation
 
-## Generate information
+### Generate information
 
-### 2. Generate info photo file
+#### 2. Generate info photo file
 
 In order to generate json file information about photos template, you need to run this command line :
 ```
@@ -93,11 +98,11 @@ python extractInfo.py <template-folder>
 
 ---
 
-# Utilisation
+## Utilisation
 
-## Generate information
+### Generate information
 
-### 3. Generate disposition info file
+#### 3. Generate disposition info file
 
 ```
 python disposition.py <template-folder> <output-filename> <x-axis-number-photos> <y-axis-number-photos> <number-of-pages>
@@ -105,11 +110,11 @@ python disposition.py <template-folder> <output-filename> <x-axis-number-photos>
 
 ---
 
-# Utilisation
+## Utilisation
 
-## Generate information
+### Generate information
 
-### 4. Generate photo album
+#### 4. Generate photo album
 
 ```
 python buildAlbum.py <template-folder> <disposition-file> <solution-file> (<solution-line>)
@@ -122,6 +127,6 @@ python buildAlbum.py templates/FirstTemplate/ album-6-2per3.json chronologic-ord
 
 ---
 
-# Licence
+## Licence
 
 [CeCILL](http://www.cecill.info/index.en.html)

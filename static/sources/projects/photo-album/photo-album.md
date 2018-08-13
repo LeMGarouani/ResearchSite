@@ -1,12 +1,10 @@
 layout: true
 <div class="remark-header"><span><a href="" class="remark-quit-cross"><i class="fas fa-times fa-2x"></i></a></span></div>
 <div class="remark-footer"><span>Photo album project
-<a href="https://github.com/jbuisine/RO.PhotoAlbumProject" class="remark-icon-bottom"><i class="fab fa-github fa-1x"></i></a>
+<a href="https://github.com/jbuisine/OR.PhotoAlbumProject" class="remark-icon-bottom"><i class="fab fa-github fa-1x"></i></a>
 <a href="/sources/projects/photo-album/M1_PhotoAlbumProject.pdf" class="remark-icon-bottom"><i class="fas fa-file-pdf fa-1x"></i></a>
 <a href="/sources/projects/photo-album/M1_PhotoAlbumProject.pdf" class="remark-icon-bottom"><i class="fas fa-chalkboard-teacher fa-1x"></i></a>
 </span></div>
-
-
 
 ---
 class: center, middle

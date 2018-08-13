@@ -62,10 +62,30 @@
 
  $('.show-slide').click(function(){
 
+    $('#source').show();
+
+    var options = {
+        delimiters: [
+          {left: "$$", right: "$$", display: true},
+          {left: "$", right: "$", display: false}
+        ]
+    };
+
+    var renderMath = function() {
+        renderMathInElement(document.body, options);
+        // or if you want to use $...$ for math,
+        // renderMathInElement(document.body, {delimiters: [ // mind the order of delimiters(!?)
+        //     {left: "$$", right: "$$", display: true},
+        //     {left: "$", right: "$", display: false},
+        //     {left: "\\[", right: "\\]", display: true},
+        //     {left: "\\(", right: "\\)", display: false},
+        // ]});
+    }
+
     var slideshow = remark.create({
       sourceUrl: {{ $.Params.slide_link }},
       highlightStyle: 'tomorrow-night',
-    });
+    }, renderMath);
 
     $('article').hide();
     $('footer').hide();

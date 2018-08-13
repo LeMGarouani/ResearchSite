@@ -291,7 +291,7 @@ pygmentsCodeFences = true
  #   2: OpenStreetMap (Mapnik)
  #   3: OpenStreetMap (Mapbox)
  map = 1
- map_api_key = "AIzaSyAnMUnsu27JQU_SXImDmB4ARe-DA1YN2K8"
+ map_api_key = ""
  latitude = "50.51531804109467"
  longitude = "1.6496527573114008"
  zoom = 15

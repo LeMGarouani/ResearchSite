@@ -20,7 +20,7 @@ tags = ["operations-research", "school"]
 # Optional external URL for project (replaces project detail page).
 external_links = [
       [
-        "https://github.com/jbuisine/RO.PhotoAlbumProject", "Github", "project", "blue"
+        "https://github.com/jbuisine/OR.PhotoAlbumProject", "Github", "project", "blue"
       ],
       [
         "/sources/projects/photo-album/M1_PhotoAlbumProject.pdf", "Download", "report", "lightgrey"
