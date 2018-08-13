@@ -1,6 +1,12 @@
-# Meta Heuristics library
+layout: true
+<div class="remark-header"><span><a href="" class="remark-quit-cross"><i class="fas fa-times fa-2x"></i></a></span></div>
+<div class="remark-footer"><span>Meta Heuristics library<a href="" class="remark-icon-bottom"><i class="fas fa-times"></i></a><a href="" class="remark-icon-bottom"><i class="fas fa-times"></i></a></span></div>
 
-Implementation of operations research meta heuristics algorithms in C++ (Such as examples tabu search, simulated annealing, meta local search...)
+---
+class: center, middle
+# Meta Heuristics library
+<hr>
+**Summary** : Implementation of operations research meta heuristics algorithms in C++ (Such as examples tabu search, simulated annealing, meta local search...)
 
 ---
 
