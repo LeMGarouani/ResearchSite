@@ -20,7 +20,8 @@ weight = 60
 - 02 : Heuristic search
 - 03 : Local search
 - 04 : Adversarial search
-- [05 : Constraints Programming](/sources/courses/ai/AI___5_ConstraintsProgramming.pdf)
+- [05 : Constraints Programming](/sources/teaching/ai/AI___5_ConstraintsProgramming.pdf)
+- [05 : Constraints Programming](/teaching/abstract-mcts)
 - ...
 
 ### Operations Research
