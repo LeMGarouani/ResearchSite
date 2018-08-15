@@ -271,3 +271,9 @@ div.remark-footer span {
 
 .remark-slides-area h4 { color: #343a40 }
 .remark-slides-area .mdmedia { display: none }
+
+.show-slide{
+  float:right;
+  margin-right: 200px;
+  margin-top: 30px;
+}

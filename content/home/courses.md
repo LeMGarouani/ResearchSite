@@ -21,7 +21,7 @@ weight = 60
 - 03 : Local search
 - 04 : Adversarial search
 - [05 : Constraints Programming](/sources/teaching/ai/AI___5_ConstraintsProgramming.pdf)
-- [05 : Constraints Programming](/teaching/abstract-mcts)
+<!-- - [05 : Constraints Programming](/teaching/abstract-mcts) -->
 - ...
 
 ### Operations Research

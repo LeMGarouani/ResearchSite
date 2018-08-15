@@ -2,13 +2,13 @@
 # Projects widget.
 # This widget displays all projects from `content/project/`.
 
+active = false
 date = "2017-09-12T00:00:00"
 draft = false
-folder = "teaching"
 
 title = "Teaching"
 subtitle = "All files for teaching"
-widget = "projects"
+widget = "teaching"
 
 
 # Order that this section will appear in.
