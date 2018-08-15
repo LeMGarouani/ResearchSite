@@ -6,7 +6,7 @@ date = "2016-04-20T00:00:00"
 draft = false
 
 title = "Courses"
-subtitle = ""
+subtitle = "All courses written while reading"
 widget = "custom"
 
 # Order that this section will appear in.
@@ -20,7 +20,8 @@ weight = 60
 - 02 : Heuristic search
 - 03 : Local search
 - 04 : Adversarial search
-- [05 : Constraints Programming](/sources/courses/ai/AI___5_ConstraintsProgramming.pdf)
+- [05 : Constraints Programming](/sources/teaching/ai/AI___5_ConstraintsProgramming.pdf)
+<!-- - [05 : Constraints Programming](/teaching/abstract-mcts) -->
 - ...
 
 ### Operations Research

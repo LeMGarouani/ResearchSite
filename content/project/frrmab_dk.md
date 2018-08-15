@@ -8,6 +8,8 @@ title = "FRRMAB directions knowledge"
 # Project summary to display on homepage.
 summary = "Adaptive Operator Selection into the MOEA/D algorithm. This AOS called FRRMAB_DK is based on MAB algorithm for each sub problem with shares of information."
 
+slide_link = "/sources/projects/frrmab_dk/frrmab_dk.md"
+
 # Optional image to display on homepage (relative to `static/img/` folder).
 #image_preview = "projects/post-it-yellow.jpg"
 
@@ -39,6 +41,7 @@ This MAB algorithm brings an automatic selection of an operator (mutation/crosso
 The MOEA/D algorithm proposes scalar decomposition of multi objectives problem into ***n*** mono-objective problems.
 The final approach of this project is to introduce a new way of using MAB algorithm on each sub problem with information shares based on affinity of sub problems. FRRMAB_DK is based on FRRMAB which have been proposed **[[1]](https://doi.org/10.1109/TEVC.2013.2239648)**.
 
+---
 # Installation
 
 It's a cmake project, so you only need to :
@@ -56,10 +59,13 @@ And then :
 cmake
 ```
 
+---
+
 # MOEA/D
 
 For MOEA/D algorithm, QAP instances are generated following this available [generator](http://www.cs.bham.ac.uk/~jdk/mQAP/).
 
+---
 # Licence
 
 [CeCILL](http://www.cecill.info/index.en.html)
