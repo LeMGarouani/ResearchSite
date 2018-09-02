@@ -26,7 +26,7 @@ weight = 1
 #  year = 2016
 
 [[education.courses]]
-  course = "PhD student in IA, Sep. 2018 - present"
+  course = "PhD student in IT, Sep. 2018 - present"
   institution = "ULCO Calais, France"
 
 [[education.courses]]

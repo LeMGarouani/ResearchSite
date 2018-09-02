@@ -4,7 +4,7 @@ date = "2017-11-05"
 
 # Project title.
 title = "Abstract MCTS"
-slide_link = "/sources/teaching/abstract-mcts/abstract-mcts.md"
+slide_link = "/sources/teaching-example/abstract-mcts/abstract-mcts.md"
 
 # Project summary to display on homepage.
 summary = "Abstract simple implementation of Monte Carlo Tree Search (UCT) using Upper Confidence Bound (UCB) algorithm developed in C++. An example is available to show how implements it."

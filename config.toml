@@ -53,7 +53,7 @@ pygmentsCodeFences = true
   font = "default"
 
   name = "Jérôme Buisine"
-  role = "PhD student in IA"
+  role = "PhD student in IT"
   organization = "ULCO Calais"
   organization_url = ""
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)

@@ -8,8 +8,6 @@ title = "MO Photo Album project V2"
 # Project summary to display on homepage.
 summary = "Second version of photo album QAP using ParadisEO C++ library in order to make statistics faster (MOEA/D, NSGA-II, Adaptative Operator Selection)."
 
-slide_link = "/sources/projects/photo-album-v2/photo-album-v2.md"
-
 # Optional image to display on homepage (relative to `static/img/` folder).
 #image_preview = "projects/post-it-yellow.jpg"
 

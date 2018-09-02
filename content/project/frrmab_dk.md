@@ -8,8 +8,6 @@ title = "FRRMAB directions knowledge"
 # Project summary to display on homepage.
 summary = "Adaptive Operator Selection into the MOEA/D algorithm. This AOS called FRRMAB_DK is based on MAB algorithm for each sub problem with shares of information."
 
-slide_link = "/sources/projects/frrmab_dk/frrmab_dk.md"
-
 # Optional image to display on homepage (relative to `static/img/` folder).
 #image_preview = "projects/post-it-yellow.jpg"
 
