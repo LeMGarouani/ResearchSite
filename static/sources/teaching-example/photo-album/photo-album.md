@@ -1,52 +1,26 @@
-+++
-# Date this page was created.
-date = "2017-09-18"
+layout: true
+<div class="remark-header"><span><a href="" class="remark-quit-cross"><i class="fas fa-times fa-2x"></i></a></span></div>
+<div class="remark-footer"><span>Photo album project
+<a href="https://github.com/jbuisine/OR.PhotoAlbumProject" class="remark-icon-bottom"><i class="fab fa-github fa-1x"></i></a>
+<a href="/sources/projects/photo-album/M1_PhotoAlbumProject.pdf" class="remark-icon-bottom"><i class="fas fa-file-pdf fa-1x"></i></a>
+<a href="/sources/projects/photo-album/M1_PhotoAlbumProject.pdf" class="remark-icon-bottom"><i class="fas fa-chalkboard-teacher fa-1x"></i></a>
+</span></div>
 
-# Project title.
-title = "Multi-objective optimization based on photo album QAP"
+---
+class: center, middle
+# Photo album project
 
-# Project summary to display on homepage.
-summary = "Comparisons of multi-objective algorithms based on photo album QAP instances such as MOEA/D and TP-LS"
+<hr>
 
-# Optional image to display on homepage (relative to `static/img/` folder).
-#image_preview = "projects/post-it-green.jpg"
+**Description :** Project which proposes automatic generated order for photo album
 
-# Tags: can be used for filtering projects.
-# Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["operations-research", "school"]
-
-# Optional external URL for project (replaces project detail page).
-external_links = [
-      [
-        "https://github.com/jbuisine/OR.PhotoAlbumProject", "Github", "project", "blue"
-      ],
-      [
-        "/sources/projects/photo-album/M1_PhotoAlbumProject.pdf", "Download", "report", "lightgrey"
-      ],
-      [
-        "/sources/projects/photo-album/M1_PhotoAlbumProjectDiapo.pdf", "Download", "presentation", "lightgrey"
-      ]
-    ]
-
-# Does the project detail page use math formatting?
-math = false
-
-# Optional featured image (relative to `static/img/` folder).
-[header]
-#image = "headers/bubbles-wide.jpg"
-caption = "Photo album QAP"
-
-+++
-
----------------------------------------------------------------------
 __Supervisors__ : F. Teytaud, S. Verel.
 
 __Author__ : Jérôme Buisine, IT Student at ULCO Calais.
 
-***
+---
 
-Abstract
-========
+## Abstract
 
 This paper presents the results of my research project I have done during my first year Master’s Degree.
 Its aim is to learn more about different kind of Multiobjective algorithm, compare them and demonstrate
@@ -69,11 +43,11 @@ way it would be interesting to continue and investigate.
 
 ***Note :*** *All algorithms source code is in Scala multi paradigm language. Scala has been selected to get benefit of its functional paradigm for this mQAP. The platform used for test suites is a Cloud platform solution with 1 vCPU and 1.7 GB of RAM*
 
-Presentation of photo album QAP
-===============================
+---
 
-QAP explanation
----------------
+## Presentation of photo album QAP
+
+### QAP explanation
 
 As said earlier, is a QAP instance. In our case, a single-objective QAP
 can be defined with one matrix which represents the similarity score
@@ -93,8 +67,11 @@ picture 40 in terms of similarity criteria. The objective of this
 Quadratic Assignment Problem is to assign each photo to a location in
 such a way as to minimize the total cost.
 
-Single objective QAP definitions
---------------------------------
+---
+
+## Presentation of photo album QAP
+
+### Single objective QAP definitions
 
 A single objective QAP mathematical representation can be defined as
 follows.
@@ -123,6 +100,15 @@ follows.
 -   $D = (d\_{ij})$ is an $n \times n$ matrix where $d\_{ij}$ is the
     euclidean distance between photos $i$ and $j$.
 
+---
+
+## Presentation of photo album QAP
+
+### Single objective QAP definitions
+
+A single objective QAP mathematical representation can be defined as
+follows.
+
 **Optimization Problem**
 
 -   The single objective fitness to minimize for this QAP problem is
@@ -136,8 +122,11 @@ Each individual product $s\_{ij}.d\_{\phi(i)\phi(j)}$ is the cost of
 assigning photo $i$ to location $\phi(i)$ and photo $j$ to location
 $\phi(j)$.
 
-mQAP photo album formulation
-----------------------------
+---
+
+## Presentation of photo album QAP
+
+### mQAP photo album formulation
 
 Now we have defined the single objective photo album QAP instance, we
 have to introduce multiobjective QAP. mQAP is used when we want to
@@ -153,15 +142,18 @@ paper can be formalized as follows :
 $$\min f\_1(\phi) = \sum\_{i=1}^{n} \sum\_{j=1}^{n} s^1\_{ij}.d\_{\phi(i)\phi(j)}$$
 $$\min f\_2(\phi) = \sum\_{i=1}^{n} \sum\_{j=1}^{n} s^2\_{ij}.d\_{\phi(i)\phi(j)}$$
 
-where ($f_1$, $f_2$) is the pair of objective functions to be minimized,
-$n$ the number of photos, $S_1 = (s^1\_{ij})$ and $S_2 = (s^2\_{ij})$ are
+where $(f\_1, f\_2)$ is the pair of objective functions to be minimized,
+$n$ the number of photos, $S\_1 = (s^1\_{ij})$ and $S\_2 = (s^2\_{ij})$ are
 both an $n \times
 n$ matrix of constant values either positive or zero. Zero value means
 that the similarity is flagrantly, so consequently it’s the same or
 current photo.
 
-Objectives choices
-------------------
+---
+
+## Presentation of photo album QAP
+
+### Objectives choices
 
 In this project we have multiple criteria to assume that photo $i$ is
 simular to photo $j$ or as contrary assume they are opposite. Our goal
@@ -172,8 +164,7 @@ a list of these different kind of criteria objectives.
     -   p-hash
     -   d-hash
 
-
-    * For each hash, matrix values are computed as below.
+    For each hash, matrix values are computed as below.
 
     $$\sum\_{i=1, j=1}^{n} \sum\_{k=1, m=1}^{n} |{x\_{i,m} - x\_{j,k}|}$$
 
@@ -181,9 +172,16 @@ a list of these different kind of criteria objectives.
     -   Uncommon tags values
     -   Number of uncommon tags
 
-    * For each tags, matrix values are computed as follows.
+    For each tags, matrix values are computed as follows.
 
     $$\sum\_{i=1, j=1}^{n} \sum\_{k=1, m=1}^{n} |{x\_{i,m} - x\_{j,k}|}$$
+
+---
+
+
+## Presentation of photo album QAP
+
+### MQAP : Objectives choices
 
 3.  In this project we treat only two colors. These colors are the most
     dominant colors of the photo. Distance color formula based on RGB
@@ -202,8 +200,9 @@ non-correlated criteria are important to consider having better results.
 So, into this paper we will take attention of the *commonTags* and *grey
 average* criteria.
 
-Test context presentation
--------------------------
+---
+
+## Test context presentation
 
 For all test suites demonstrate later, a test context is defined. This
 context is established first of all to make comparison easier and to
@@ -223,19 +222,24 @@ This test context is defined as follows.
 -   Photos with different grey average values and tags such as example
     forms, positions and colors.
 
+---
+
+## Test context presentation
+
 A photo disposition in our test suites is represented as follows.
 
 | Example 1  | Example 2 |
 | ------------- | ------------- |
-|![image](/img/projects/album-photo/others/photo1_project.png)| ![image](/img/projects/album-photo/others/photo2_project.png) |
+|![image](/img/projects/album-photo/others/photo1_project.png)|![image](/img/projects/album-photo/others/photo2_project.png)|
 
   Each algorithm performance will be rated with features based on
 $V(N)$, the neighbor set of current solution iteration treated. We will
 regard mean and standard deviation for each thousand iterations. Thus,
 comparisons will show which algorithm is better for our mQAP.
 
-Multiobjective algorithms studied
-=================================
+---
+
+## Multiobjective algorithms studied
 
 Before beginning our test suites, we take a look at the different
 exploited algorithms. Each algorithm has its benefits and also its
@@ -243,14 +247,16 @@ disadvantages.
 
 For all of these algorithms, we will use the term or . This term
 indicates the dominance relation of solutions. A solution $\phi \in S_n$
-is dominated by a solution $\phi&#39; \in S_n$, denoted as $\phi \prec
-\phi&#39;$ if $f_k(\phi&#39;) <= f_k(\phi)$ for all $k \in [1,2]$, with at
-least one strict inequality. If neither $\phi \not\prec \phi&#39;$ nor
-$\phi&#39; \not\prec \phi$ holds, then both solutions are *mutually
+is dominated by a solution $\phi' \in S_n$, denoted as $\phi \prec
+\phi'$ if $f_k(\phi') <= f_k(\phi)$ for all $k \in [1,2]$, with at
+least one strict inequality. If neither $\phi \not\prec \phi'$ nor
+$\phi' \not\prec \phi$ holds, then both solutions are *mutually
 non-dominated*.
 
-Random walk Multiobjective algorithm
-------------------------------------
+---
+
+## Multiobjective algorithms studied
+### Random walk Multiobjective algorithm
 
 Random walk algorithm goal is to simply search solution randomly from
 the search space at each iteration and refresh the non dominated
@@ -258,8 +264,10 @@ solution. Just below the implementation of this algorithm.
 
 ![image](/img/projects/album-photo/algos/Algorithm1.png)
 
-Pareto Local Search algorithm
------------------------------
+---
+
+## Multiobjective algorithms studied
+### Pareto Local Search algorithm
 
 Pareto Local Search algorithm is a kind of archiving algorithm. It’s aim
 is to course all solutions of the search space to obtain all non
@@ -269,8 +277,10 @@ preview implementation of this algorithm is available below.
 
 ![image](/img/projects/album-photo/algos/Algorithm2.png)
 
-MOEA/D algorithm
-----------------
+---
+
+## Multiobjective algorithms studied
+### MOEA/D algorithm
 
 The Multiobjective Evolutionary Algorithm Based on Decomposition
 [4] is a scalarizing approach with population.
@@ -288,18 +298,25 @@ this paper.
 
 -   Tchebycheff scalarizing function defined as follows.
 
-    $$g_{\lambda} (x) = \min \bigg&#92;{ \lambda\_1 * |f\_1(x) - r\_1|, \lambda\_2 * |f\_2(x) - r\_2| \bigg&#92;}$$
+    $$g_{\lambda} (x) = \min \bigg( \lambda_1 . |f_1(x) - r_1|, \lambda_2 . |f_2(x) - r_2| \bigg)$$
 
     where $r$ is a reference point in the objective space, as example
     $r(0,0)$.
+
+---
+
+## Multiobjective algorithms studied
+### MOEA/D algorithm
 
 In this paper, we will compare these two approaches on the MOEA/D
 algorithm. The implementation of this algorithm is described below.
 
 ![image](/img/projects/album-photo/algos/Algorithm3.png)
 
-TP-LS algorithm
----------------
+---
+
+## Multiobjective algorithms studied
+### TP-LS algorithm
 
 The Two-Phase Local Search [4] consists in
 a hybrid two-phase approach. In this paper we will apply MOEA/D and PLS
@@ -309,9 +326,9 @@ the implementation of this algorithm.
 
 ![image](/img/projects/album-photo/algos/Algorithm4.png)
 
+---
 
-Performance comparisons
------------------------
+## Performance comparisons
 
 As said before, our test suites is based on a maximum of 20.000
 iterations. First of all we compare landscape of each algorithm. The two
@@ -332,6 +349,10 @@ a large set of non dominated solutions. The Pareto front is represented
 by the PLS archiving algorithm graph, but it needs more computing
 resources than all others algorithms.
 
+---
+
+## Performance comparisons
+
   MOEA/D algorithm give fast results after Random walk. They do not
 approach the results of PLS algorithm but it’s a well compromise in
 terms of performance and time. TPLS with the weighted sum as
@@ -350,7 +371,13 @@ number non dominated neighbors, Hyper volume difference between hyper
 volume of the current solution and hyper volume local (Hyper volume of
 its neighbors).
 
-![image](/img/projects/album-photo/infos/features.png)
+---
+
+## Performance comparisons
+
+![image:scale 50%](/img/projects/album-photo/infos/features.png)
+
+---
 
 ### ND & D information
 
@@ -372,6 +399,8 @@ a certain time. As contrary the others continue to vary during the
 computation. Perhaps PLS algorithm can’t find new non dominated
 solutions readily as a lot of nice solutions have been already seen and
 random walk is so random and can find good solutions easily.
+
+---
 
 ### Hyper volume information
 
@@ -395,8 +424,9 @@ decreases more than others and PLS increases lower. PLS algorithm
 perhaps encounters problems to obtain good solutions after a certain
 number of iterations.
 
-Conclusion
-==========
+---
+
+## Conclusion
 
 In terms of algorithm performance I think the two-phase local search
 algorithms is a favorable compromise. These kind of algorithms decrease
@@ -423,6 +453,8 @@ function of these latest modifications after comparison. Each criteria
 significance can be personalized for the client and its future album.
 
 ---
+
+## References
 
 **[1]** T.  C.  Koopmans  and  M.  Beckmann.   Assignment  problems  and  the  location  of  economic  activities. *Econometrica:  journal of the Econometric Society*, pages 53–76, 1957
 

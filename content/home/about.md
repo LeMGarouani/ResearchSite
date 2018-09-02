@@ -13,8 +13,10 @@ weight = 1
 [interests]
   interests = [
     "Artificial Intelligence",
+    "Machine learning",
+    "Deep learning",
     "Operations Research",
-    "New technologies"
+    "New technologies..."
   ]
 
 # List your qualifications (such as academic degrees).
@@ -23,9 +25,12 @@ weight = 1
 #  institution = "ULCO Calais"
 #  year = 2016
 
+[[education.courses]]
+  course = "PhD student in IT, Sep. 2018 - present"
+  institution = "ULCO Calais, France"
 
 [[education.courses]]
-  course = "Master's degree in IT, 2016 - present"
+  course = "Master's degree in IT (high honors), 2016 - 2018"
   institution = "ULCO Calais, France"
 
 [[education.courses]]
@@ -43,6 +48,4 @@ weight = 1
 
 # Biography
 
-I'm a passionate IT student in Master's degree. I'm fond of computer sciences and particularly domains of Artificial Intelligence and Operations Research. I read a lot of books during my free time and sometimes collaborate into the IT free world.
-
-My goal is to continue in this vast domain of IT research. In this way, during my second year of apprenticeship, I joined ArcelorMittal Atlantique Lorraine's SiMo team to discover more precisely Operations Research and AI!
+I'm a passionate IT student in Master's degree. I'm fond of computer sciences and particularly domains of Artificial Intelligence and Operations Research. I read a lot of books during my free time and sometimes collaborate into the IT free world. My goal is to continue in this vast domain of IT research.

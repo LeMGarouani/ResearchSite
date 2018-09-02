@@ -2,12 +2,14 @@
 # Projects widget.
 # This widget displays all projects from `content/project/`.
 
+active = false
 date = "2017-09-12T00:00:00"
 draft = false
 
-title = "Projects"
-subtitle = "Student and research projects"
-widget = "projects"
+title = "Teaching"
+subtitle = "All files for teaching"
+widget = "teaching"
+
 
 # Order that this section will appear in.
 weight = 30
@@ -21,21 +23,9 @@ view = 1
 # Add or remove as many filters (`[[filter]]` instances) as you like.
 # Use "*" tag to show all projects or an existing tag prefixed with "." to filter by specific tag.
 # To remove toolbar, delete/comment all instances of `[[filter]]` below.
-[[filter]]
+ [[filter]]
   name = "All"
   tag = "*"
 
-
-[[filter]]
-  name = "Artificial Intelligence"
-  tag = ".artificial-intelligence"
-
-[[filter]]
-  name = "Operations Research"
-  tag = ".operations-research"
-
-[[filter]]
-  name = "School"
-  tag = ".school"
 
 +++
