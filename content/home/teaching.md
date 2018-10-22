@@ -2,7 +2,7 @@
 # Projects widget.
 # This widget displays all projects from `content/project/`.
 
-active = false
+active = true
 date = "2017-09-12T00:00:00"
 draft = false
 
@@ -17,7 +17,7 @@ weight = 30
 # View.
 # Customize how projects are displayed.
 # Legend: 0 = list, 1 = cards.
-view = 1
+view = 0
 
 # Filter toolbar.
 # Add or remove as many filters (`[[filter]]` instances) as you like.
