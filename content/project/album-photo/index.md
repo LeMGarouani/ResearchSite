@@ -7,6 +7,9 @@ author = ["jbuisine"]
 # Project title.
 title = "Multi-objective optimization based on photo album QAP"
 
+profile = false  # Show author profile?
+comments = false  # Show comments?
+
 # Project summary to display on homepage.
 summary = "Comparisons of multi-objective algorithms based on photo album QAP instances such as MOEA/D and TP-LS"
 

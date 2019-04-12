@@ -7,6 +7,9 @@ date = 2019-03-18T10:00:00
 date_end = 2019-03-18T16:00:00
 all_day = false
 
+profile = false  # Show author profile?
+comments = false  # Show comments?
+
 # Schedule page publish date (NOT talk date).
 publishDate = 2017-01-01T00:00:00
 

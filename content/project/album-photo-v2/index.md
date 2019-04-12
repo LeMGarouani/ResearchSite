@@ -5,6 +5,9 @@ date = "2017-11-18"
 # Project title.
 title = "MO Photo Album project V2"
 
+profile = false  # Show author profile?
+comments = false  # Show comments?
+
 # Project summary to display on homepage.
 summary = "Second version of photo album QAP using ParadisEO C++ library in order to make statistics faster (MOEA/D, NSGA-II, Adaptative Operator Selection)."
 
