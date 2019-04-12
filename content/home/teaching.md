@@ -1,31 +1,28 @@
 +++
-# Projects widget.
-# This widget displays all projects from `content/project/`.
-
-active = true
-date = "2017-09-12T00:00:00"
-draft = false
 
 title = "Teaching"
-subtitle = "All files for teaching"
-widget = "teaching"
+subtitle = "All courses given during thesis"
 
+widget = "blank"
+headless = true  # This file represents a page section.
+weight = 80
 
-# Order that this section will appear in.
-weight = 30
+# ... Put Your Section Options Here (title etc.) ...
 
-# View.
-# Customize how projects are displayed.
-# Legend: 0 = list, 1 = cards.
-view = 0
-
-# Filter toolbar.
-# Add or remove as many filters (`[[filter]]` instances) as you like.
-# Use "*" tag to show all projects or an existing tag prefixed with "." to filter by specific tag.
-# To remove toolbar, delete/comment all instances of `[[filter]]` below.
- [[filter]]
-  name = "All"
-  tag = "*"
+[design]
+  # Choose how many columns the section has. Valid values: 1 or 2.
+  columns = "2"
 
 
 +++
+
+
+## Courses
+
+- **License 1 (first year degree in IT) :** Algorithmic (in C)
+- **License 2 (second year degree in IT) :** Advanced algorithmic with OOP (in C++)
+- **DUT 1 (first year degree in IT) :** Begin of OOP with Java
+
+## Others
+
+- **Constraints programming :** [History and concepts](sources/teaching/ai/AI___5_ConstraintsProgrammin.pdf)
