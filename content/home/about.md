@@ -1,51 +1,13 @@
 +++
-# About/Biography widget.
+# About widget.
+widget = "about"  # See https://sourcethemes.com/academic/docs/page-builder/
+headless = true  # This file represents a page section.
+active = true  # Activate this widget? true/false
+weight = 20  # Order that this section will appear in.
 
-date = "2017-09-12T00:00:00"
-draft = false
+title = "Biography"
 
-widget = "about"
-
-# Order that this section will appear in.
-weight = 1
-
-# List your academic interests.
-[interests]
-  interests = [
-    "Artificial Intelligence",
-    "Machine learning",
-    "Deep learning",
-    "Operations Research",
-    "New technologies..."
-  ]
-
-# List your qualifications (such as academic degrees).
-#[[education.courses]]
-#  course = "Master's degree in IT"
-#  institution = "ULCO Calais"
-#  year = 2016
-
-[[education.courses]]
-  course = "PhD student in IT, Sep. 2018 - present"
-  institution = "ULCO Calais, France"
-
-[[education.courses]]
-  course = "Master's degree in IT (high honors), 2016 - 2018"
-  institution = "ULCO Calais, France"
-
-[[education.courses]]
-  course = "Bachelor in IT"
-  institution = "Saint Joseph High school, France"
-  year = 2016
-
-[[education.courses]]
-  course = "Two-year technical degree in IT"
-  institution = "Saint Joseph High school, France"
-  year = 2015
-
-
+# Choose the user profile to display
+# This should be the username of a profile in your `content/author/` folder.
+author = "jbuisine"
 +++
-
-# Biography
-
-I'm a passionate IT student in PhD. I'm fond of computer sciences and particularly domains of Artificial Intelligence and Operations Research. I read a lot of books during my free time and sometimes collaborate into the IT free world. My goal is to continue in this vast domain of IT research.
