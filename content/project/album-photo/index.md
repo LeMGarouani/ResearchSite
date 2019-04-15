@@ -27,7 +27,11 @@ tags = ["operations-research", "school"]
 
 
 # Optional external URL for project (replaces project detail page).
-external_links = [
+# Does the project detail page use math formatting?
+math = true
+
+[external_infos]
+links = [
       [
         "https://github.com/jbuisine/OR.PhotoAlbumProject", "Github", "project", "blue"
       ],
@@ -39,12 +43,9 @@ external_links = [
       ]
     ]
 
-# Does the project detail page use math formatting?
-math = true
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-#image = "headers/bubbles-wide.jpg"
 caption = "Photo album QAP"
 
 +++
