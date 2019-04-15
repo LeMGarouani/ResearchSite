@@ -16,7 +16,7 @@ height = "200px"
 # Slides.
 # Duplicate an `[[item]]` block to add more slides.
 [[item]]
-  title = "I’d rather live with a good question than a bad answer"
+  title = "I’d rather live with a good question than a bad answer."
   content = "Aryeh Frimer"
   align = "center"  # Choose `center`, `left`, or `right`.
 
@@ -43,7 +43,7 @@ height = "200px"
   overlay_filter = 0.3  # Darken the image. Value in range 0-1.
 
 [[item]]
-  title = "You must be the change you wish to see in the world"
+  title = "You must be the change you wish to see in the world."
   content = "Gandhi"
   align = "center"
 

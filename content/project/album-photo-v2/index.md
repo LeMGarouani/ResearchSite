@@ -14,6 +14,9 @@ summary = "Second version of photo album QAP using ParadisEO C++ library in orde
 # Tags: can be used for filtering projects.
 tags = ["operations-research", "school"]
 
+# Optional external URL for project (replaces project detail page).
+external_link = "https://github.com/jbuisine/PhotoAlbumOR-v2"
+
 # Optional image to display on homepage (relative to `static/img/` folder).
 [image]
   # Caption (optional)
@@ -25,19 +28,11 @@ tags = ["operations-research", "school"]
   preview_only = true
 
 
-# Optional external URL for project (replaces project detail page).
-external_links = [
-      [
-        "https://github.com/jbuisine/PhotoAlbumOR-v2", "Github", "project", "blue"
-      ]
-    ]
-
 # Does the project detail page use math formatting?
 math = false
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-#image = "headers/bubbles-wide.jpg"
 caption = "Photo album QAP v2"
 
 +++

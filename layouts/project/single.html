@@ -7,7 +7,7 @@
 
   <div class="article-container">
      <ul class="list-inline">
-        {{ range $.Params.external_links }}
+        {{ range .Params.external_infos.links }}
         <li class="list-inline-item">
           <a href="{{ index . 0 }}" target="_blank">
             <img src="https://img.shields.io/badge/{{ index . 1 }}-{{ index . 2 }}-{{ index . 3 }}.svg?style=flat-square" alt="{{ index . 1 }} - {{ index . 2 }}">
@@ -19,7 +19,7 @@
     <div class="article-style" itemprop="articleBody">
       {{ .Content }}
     </div>
- 
+    
     {{ partial "tags.html" . }}
     {{ partial "page_author.html" . }}
 
