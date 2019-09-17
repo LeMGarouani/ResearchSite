@@ -12,17 +12,22 @@ weight = 80
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
   columns = "2"
-
-
 +++
 
 
 ## Courses
 #### 2018 - 2019
 
+- **DUT 1 (first year degree in IT) :** Begin of OOP with Java
 - **License 1 (first year degree in IT) :** Algorithmic (in C)
 - **License 2 (second year degree in IT) :** Advanced algorithmic with OOP (in C++)
+
+#### 2019 - 2020
+
+- **DUT 1 (first year degree in IT) :** Algorithmic (in Python)
 - **DUT 1 (first year degree in IT) :** Begin of OOP with Java
+- **DUT 2 (second year degree in IT) :** Artificial Intelligence
+- **License 2 (second year degree in IT) :** Advanced algorithmic with OOP (in C++)
 
 ## Others
 
