@@ -27,6 +27,7 @@ interests = [
     "Artificial Intelligence",
     "Machine learning",
     "Deep learning",
+    "Computer graphics",
     "Operations Research",
     "New technologies..."
 ]
