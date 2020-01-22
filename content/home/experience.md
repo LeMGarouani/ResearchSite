@@ -19,19 +19,17 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[experience]]
-  title = "PhD student in machine learning"
+  title = "PhD student in IT"
   company = "ULCO"
   company_url = ""
   location = "Calais, France"
   date_start = "2018-10-02"
   date_end = ""
   description = """
-<br>
-[**Thesis :**  *Noise detection in stereoscopic synthetis images using machine learning.*](thesis/subject/)
-
-<br> 
-
-* Modeling a generic noise detection model in stereoscopic images (consideration of different media) in order to reduce the computation time for generating one or more synthesized images
+<br>  
+ 
+  * [**Thesis subject :**  *Noise detection in stereoscopic synthetis images using machine learning.*](thesis/subject/)
+  * **Keywords**: *computer graphics, image processing, noise detection, denoising, progressive rendering*.
   """
 
 
