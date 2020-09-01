@@ -1,19 +1,19 @@
 +++
 # Date this page was created.
-date = "2019-02-27"
+date = "2020-09-01"
 
 # Project title.
-title = "IPFML Package"
+title = "Macop Package"
 
 # Project summary to display on homepage.
-summary = "Image Processing For Machine Learning is a Python package developed during my thesis."
+summary = "Minimalist And Customizable Optimization Package"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["image-processing", "machine-learning"]
+tags = ["operations-research"]
 
 # Optional external URL for project (replaces project detail page).
-external_link = "https://github.com/prise-3d/IPFML"
+external_link = "https://github.com/jbuisine/macop"
 
 +++
 

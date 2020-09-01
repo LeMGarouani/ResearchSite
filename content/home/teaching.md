@@ -29,6 +29,14 @@ weight = 80
 - **DUT 2 (second year degree in IT) :** Artificial Intelligence
 - **License 2 (second year degree in IT) :** Advanced algorithmic with OOP (in C++)
 
+
+#### 2020 - 2021
+
+- **License 3 (third year degree in IT) :** Advanced OOP (in C++)
+- **Master 1 (fourth year degree in IT) :** Agility
+  - TP1 : Continuous Integration (available soon)
+  - TP5 & 6 : End to End testing process (available soon)
+
 ## Others
 
 - **Constraints programming :** [History and concepts](sources/teaching/ai/AI___5_ConstraintsProgrammin.pdf)

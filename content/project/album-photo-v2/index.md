@@ -3,7 +3,7 @@
 date = "2017-11-18"
 
 # Project title.
-title = "MO Photo Album project V2"
+title = "MO Photo Album project"
 
 profile = false  # Show author profile?
 comments = false  # Show comments?
