@@ -34,8 +34,8 @@ weight = 80
 
 - **License 3 (third year degree in IT) :** Advanced OOP (in C++)
 - **Master 1 (fourth year degree in IT) :** Agility
-  - TP1 : [Continuous Integration](static/sources/teaching/2020-2021/M1/Agility/TP1/tp1-2020.pdf)
-  - TP5 & 6 : [End to End testing process](static/sources/teaching/2020-2021/M1/Agility/TP5-6/tp5-6-2020.pdf)
+  - TP1 : [Continuous Integration](sources/teaching/2020-2021/M1/Agility/TP1/tp1-2020.pdf)
+  - TP5 & 6 : [End to End testing process](sources/teaching/2020-2021/M1/Agility/TP5-6/tp5-6-2020.pdf)
 
 ## Others
 
