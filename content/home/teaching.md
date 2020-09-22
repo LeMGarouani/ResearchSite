@@ -39,4 +39,4 @@ weight = 80
 
 ## Others
 
-- **Constraints programming :** [History and concepts](sources/teaching/ai/AI___5_ConstraintsProgrammin.pdf)
+- **Constraints programming :** [History and concepts](sources/teaching/ai/AI___5_ConstraintsProgramming.pdf)
