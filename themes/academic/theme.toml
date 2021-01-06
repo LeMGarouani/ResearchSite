@@ -16,6 +16,7 @@ tags = ["academic",
 features = ["academic profile",
             "research publication system",
             "projects",
+            "publications",
             "blog",
             "teaching",
             "contact"
