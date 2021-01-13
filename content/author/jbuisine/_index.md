@@ -78,6 +78,11 @@ user_groups = ["Researchers", "Visitors"]
   icon_pack = "fab"
   link = "https://www.linkedin.com/in/j%C3%A9r%C3%B4me-buisine-b62b24100"
 
+[[social]]
+  icon = "medium"
+  icon_pack = "fab"
+  link = "https://hamnexik.medium.com/"
+
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 [[social]]
