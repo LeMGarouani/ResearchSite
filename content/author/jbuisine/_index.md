@@ -1,6 +1,6 @@
 +++
 # Display name
-name = "Jérôme BUISINE"
+name = "Jérôme Buisine"
 
 # Username (this should match the folder name)
 authors = ["jbuisine"]
@@ -72,6 +72,11 @@ user_groups = ["Researchers", "Visitors"]
   icon = "github"
   icon_pack = "fab"
   link = "https://github.com/jbuisine"
+
+[[social]]
+  icon = "google-scholar"
+  icon_pack = "fab"
+  link = "https://scholar.google.fr/citations?user=JQ4bvL0AAAAJ&hl=en"
 
   [[social]]
   icon = "linkedin"
