@@ -1,5 +1,5 @@
 +++
-title = "Stopping Criterion during Rendering of Computer-Generated Images Based on SVD-Entropy "
+title = "Stopping Criterion during Rendering of Computer-Generated Images Based on SVD-Entropy"
 date = "2021-01-06"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
@@ -17,9 +17,10 @@ authors = ["Jérôme Buisine" , "André Bigand" , "Rémi Synave", "Samuel Delepo
 # 7 = Thesis
 # 8 = Patent
 publication_types = ["2"]
+publication_typename = "Journal"
 
 # Publication name and optional abbreviated version.
-publication = ""
+publication = "Entropy 2021, 23(1), 75"
 publication_short = ""
 
 # Abstract.
@@ -57,7 +58,7 @@ slides = ""
 # Links (optional).
 url_pdf = "https://www.mdpi.com/1099-4300/23/1/75"
 url_code = "https://github.com/prise-3d/LSTM-noise-detection"
-url_dataset = "https://prise3d.univ-littoral.fr/resources/sin3d/"
+url_dataset = "https://zenodo.org/record/4531460"
 url_project = "https://prise3d.univ-littoral.fr/articles/noise-detection/"
 url_slides = ""
 url_video = ""
