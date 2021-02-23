@@ -7,7 +7,7 @@
   <span itemprop="author" class="article-metadata li-cite-author">
     {{ partial "page_metadata_authors" . }}
   </span>
-  ({{ .Date.Format "2 Jan 2006" | safeHTML }}).
+  ({{ .Date.Format "Jan 2006" | safeHTML }}).
   
   <br />
   
@@ -19,7 +19,7 @@
   {{ if .Params.publication_short }}
   {{- .Params.publication_short | markdownify -}}.
   {{ else if .Params.publication }}
-  {{- .Params.publication | markdownify -}}.
+  <i>{{- .Params.publication | markdownify -}}</i>.
   {{ end }}
   <p>{{ partial "page_links" (dict "content" . "is_list" 1) }}</p>
 
@@ -40,9 +40,9 @@
   {{ if .Params.publication_short }}
   {{- .Params.publication_short | markdownify -}},
   {{ else if .Params.publication }}
-  {{- .Params.publication | markdownify -}},
+  <i>{{- .Params.publication | markdownify -}}</i>,
   {{ end }}
-  ({{ .Date.Format "2 Jan 2006" | safeHTML }}).
+  ({{ .Date.Format "Jan 2006" | safeHTML }}).
   <p>{{ partial "page_links" (dict "content" . "is_list" 1) }}</p>
 
   {{ end }}
