@@ -84,7 +84,7 @@ url_source = ""
 
 Realistic image computation mimics the natural process of acquiring pictures by simulating the physical interactions of light between all the objects, lights and cameras lying within a modelled 3D scene. This process is known as global illumination and was formalised by Kajiya with the following rendering Equation:
 
-$$L_o(x, \omega_o) = {L_e(x, \omega_o)} + \int_{\Omega}^{} {L_i(x, \omega_i)} \cdot f_r(x, \omega_i \rightarrow \omega_o) \cdot \cos \theta_i d\omega_i$$
+$L_o(x, \omega_o) = {L_e(x, \omega_o)} + \int_{\Omega}^{} {L_i(x, \omega_i)} \cdot f_r(x, \omega_i \rightarrow \omega_o) \cdot \cos \theta_i d\omega_i$
 
 where:
 
