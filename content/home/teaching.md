@@ -32,6 +32,10 @@ weight = 80
 
 #### 2020 - 2021
 
+- **License 2 (two year degree in IT) :** OOP Project (in Java) :
+  -  TP1 : [First Card Game](sources/teaching/2020-2021/L2/JavaProject/L2-JavaProject-tp1.pdf)
+  -  TP2 : [Poker Game (available soon)](#) 
+  -  TP3 : [Network Game communication (available soon)](#) 
 - **License 3 (third year degree in IT) :** Advanced OOP (in C++)
 - **Master 1 (fourth year degree in IT) :** Agility
   - TP1 : [Continuous Integration](sources/teaching/2020-2021/M1/Agility/TP1/tp1-2020.pdf)
