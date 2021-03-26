@@ -24,12 +24,10 @@ email = "contact@jeromebuisine.fr"
 # List (academic) interests or hobbies
 
 interests = [
-    "Artificial Intelligence",
     "Machine learning",
-    "Deep learning",
     "Computer graphics",
-    "Operations Research",
-    "New technologies..."
+    "Statistics",
+    "Operations Research"
 ]
 
 
