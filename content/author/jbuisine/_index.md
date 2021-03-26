@@ -13,7 +13,7 @@ role = "PhD Student in IT"
 
 # Organizations/Affiliations
 #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-organizations = [ { name = "ULCO Calais", url = "" } ]
+organizations = [ { name = "@LISIC", url = "https://www-lisic.univ-littoral.fr" } ]
 
 # Short bio (displayed in user profile at end of posts)
 bio = "My research interests include machine learning, image processing and operations research."
@@ -41,7 +41,7 @@ user_groups = ["Researchers", "Visitors"]
 
 [[education.courses]]
   course = "PhD student in IT, Sep. 2018 - present"
-  institution = "ULCO Calais, France"
+  institution = "LISIC, ULCO Calais, France"
 
 [[education.courses]]
   course = "Master's degree in IT (high honors), 2016 - 2018"
