@@ -5,7 +5,7 @@ subtitle = "All courses given during thesis"
 
 widget = "blank"
 headless = true  # This file represents a page section.
-weight = 80
+weight = 40
 
 # ... Put Your Section Options Here (title etc.) ...
 
@@ -34,7 +34,7 @@ weight = 80
 
 - **License 2 (two year degree in IT) :** OOP Project (in Java) :
   -  TP1 : [First Card Game](sources/teaching/2020-2021/L2/JavaProject/L2-JavaProject-tp1.pdf)
-  -  TP2 : [Poker Game (available soon)](#) 
+  -  TP2 : [Poker Game](sources/teaching/2020-2021/L2/JavaProject/L2-JavaProject-tp2.pdf)
   -  TP3 : [Network Game communication (available soon)](#) 
 - **License 3 (third year degree in IT) :** Advanced OOP (in C++)
 - **Master 1 (fourth year degree in IT) :** Agility
