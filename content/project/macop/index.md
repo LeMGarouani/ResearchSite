@@ -6,7 +6,7 @@ date = "2020-09-01"
 title = "Macop Package"
 
 # Project summary to display on homepage.
-summary = "Minimalist And Customizable Optimization Package"
+summary = "Minimalist And Customisable Optimisation Package"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
