@@ -16,7 +16,7 @@ role = "PhD Student in IT"
 organizations = [ { name = "@LISIC", url = "https://www-lisic.univ-littoral.fr" } ]
 
 # Short bio (displayed in user profile at end of posts)
-bio = "My research interests include machine learning, image processing and operations research."
+bio = "My research work is mainly focused on Noise perception of physically based rendering synthesis images (Monte Carlo approach) using machine learning. I also work on underlying topics such as statistics extractions, deep learning methods for image denoising and the use of Surrogate models inside operations research process for features selection."
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email = "contact@jeromebuisine.fr"
@@ -24,12 +24,10 @@ email = "contact@jeromebuisine.fr"
 # List (academic) interests or hobbies
 
 interests = [
-    "Artificial Intelligence",
     "Machine learning",
-    "Deep learning",
     "Computer graphics",
-    "Operations Research",
-    "New technologies..."
+    "Statistics",
+    "Operations Research"
 ]
 
 
@@ -97,4 +95,4 @@ user_groups = ["Researchers", "Visitors"]
 
 +++
 
-I'm a passionate IT student in PhD. I'm fond of computer sciences and particularly domains of Artificial Intelligence, Computer Graphics and Operations Research. My goal is to continue in this vast domain of IT research.
+I'm a passionate PhD student in IT. My research work is mainly focused on Noise perception of physically based rendering synthesis images (Monte Carlo approach) using machine learning. I also work on underlying topics such as statistics extractions combined with deep learning methods for image denoising and the use of Surrogate models inside operations research process for features selection.
