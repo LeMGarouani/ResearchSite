@@ -16,19 +16,11 @@ weight = 40
 
 
 ## Courses
-#### 2018 - 2019
 
-- **DUT 1 (first year degree in IT) :** Begin of OOP with Java
-- **License 1 (first year degree in IT) :** Algorithmic (in C)
-- **License 2 (second year degree in IT) :** Advanced algorithmic with OOP (in C++)
+#### 2021 - 2022
 
-#### 2019 - 2020
-
-- **DUT 1 (first year degree in IT) :** Algorithmic (in Python)
-- **DUT 1 (first year degree in IT) :** Begin of OOP with Java
-- **DUT 2 (second year degree in IT) :** Artificial Intelligence
-- **License 2 (second year degree in IT) :** Advanced algorithmic with OOP (in C++)
-
+- **Master 1 (fourth year degree in IT) :** Agility
+  - TP1 : [Git introduction](sources/git-teaching/courses/2021-2022/M1-Agility/tp1/tp1-git_introduction.pdf)
 
 #### 2020 - 2021
 
@@ -41,6 +33,19 @@ weight = 40
 - **Master 1 (fourth year degree in IT) :** Agility
   - TP1 : [Continuous Integration](sources/teaching/2020-2021/M1/Agility/TP1/tp1-2020.pdf)
   - TP5 & 6 : [End to End testing process](sources/teaching/2020-2021/M1/Agility/TP5-6/tp5-6-2020.pdf)
+
+#### 2019 - 2020
+
+- **DUT 1 (first year degree in IT) :** Algorithmic (in Python)
+- **DUT 1 (first year degree in IT) :** Begin of OOP with Java
+- **DUT 2 (second year degree in IT) :** Artificial Intelligence
+- **License 2 (second year degree in IT) :** Advanced algorithmic with OOP (in C++)
+
+#### 2018 - 2019
+
+- **DUT 1 (first year degree in IT) :** Begin of OOP with Java
+- **License 1 (first year degree in IT) :** Algorithmic (in C)
+- **License 2 (second year degree in IT) :** Advanced algorithmic with OOP (in C++)
 
 ## Others
 
