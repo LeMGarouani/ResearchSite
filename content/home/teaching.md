@@ -22,6 +22,7 @@ weight = 40
 - **Master 1 (fourth year degree in IT) :** Agility
   - TP1 : [Git introduction](sources/git-teaching/courses/2021-2022/M1-Agility/tp1/tp1-git_introduction.pdf)
   - TP2 : [Continuous Integration](sources/git-teaching/courses/2021-2022/M1-Agility/tp2/tp2-2021-ci.pdf)
+  - TP6 : [End to End testing process](sources/git-teaching/courses/2021-2022/M1-Agility/tp6/tp6-2021-cypress.pdf)
 
 #### 2020 - 2021
 
