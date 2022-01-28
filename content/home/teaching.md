@@ -23,6 +23,9 @@ weight = 40
   - TP1 : [Git introduction](sources/git-teaching/courses/2021-2022/M1-Agility/tp1/tp1-git_introduction.pdf)
   - TP2 : [Continuous Integration](sources/git-teaching/courses/2021-2022/M1-Agility/tp2/tp2-2021-ci.pdf)
   - TP6 : [End to End testing process](sources/git-teaching/courses/2021-2022/M1-Agility/tp6/tp6-2021-cypress.pdf)
+- **License 1 (first year degree in IT) :** Algorithmic (in Python)
+- **License 3 (third year degree in IT) :** Advanced OOP (in C++)
+- **License 3 (third year degree in IT) :** Software engineering
 
 #### 2020 - 2021
 

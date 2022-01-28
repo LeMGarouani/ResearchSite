@@ -9,14 +9,14 @@ authors = ["jbuisine"]
 superuser = true
 
 # Role/position
-role = "PhD Student in IT"
+role = "Temporary Lecturer and Research Assistant."
 
 # Organizations/Affiliations
 #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
 organizations = [ { name = "@LISIC", url = "https://www-lisic.univ-littoral.fr" } ]
 
 # Short bio (displayed in user profile at end of posts)
-bio = "My research work is mainly focused on Noise perception of physically based rendering synthesis images (Monte Carlo approach) using machine learning. I also work on underlying topics such as statistics extractions, deep learning methods for image denoising and the use of Surrogate models inside operations research process for features selection."
+bio = "My research work is mainly focused on noise perception of physics-based rendering images (Monte Carlo approach) using machine learning. I am also working on underlying topics such as statistical extractions combined with deep learning methods for image denoising and the use of surrogate models in the operations research process for feature selection."
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email = "contact@jeromebuisine.fr"
@@ -38,7 +38,7 @@ user_groups = ["Researchers", "Visitors"]
 # List qualifications (such as academic degrees)
 
 [[education.courses]]
-  course = "PhD student in IT, Sep. 2018 - present"
+  course = "PhD student in IT, Sep. 2018 - Dec. 2021"
   institution = "LISIC, ULCO Calais, France"
 
 [[education.courses]]
@@ -95,4 +95,4 @@ user_groups = ["Researchers", "Visitors"]
 
 +++
 
-I'm a passionate PhD student in IT. My research work is mainly focused on Noise perception of physically based rendering synthesis images (Monte Carlo approach) using machine learning. I also work on underlying topics such as statistics extractions combined with deep learning methods for image denoising and the use of Surrogate models inside operations research process for features selection.
+I am currently a Temporary Lecturer and Research Assistant in the LISIC at the University of Littoral Côte d'Opale. My research work is mainly focused on noise perception of physics-based rendering images (Monte Carlo approach) using machine learning. I am also working on underlying topics such as statistical extractions combined with deep learning methods for image denoising and the use of surrogate models in the operations research process for feature selection.

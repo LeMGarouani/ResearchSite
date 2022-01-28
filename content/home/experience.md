@@ -24,7 +24,7 @@ date_format = "Jan 2006"
   company_url = ""
   location = "Calais, France"
   date_start = "2018-10-02"
-  date_end = ""
+  date_end = "2021-12-08"
   description = """
 <br>  
  
