@@ -52,7 +52,7 @@ time_format = "3:04 PM"
 # Enter contact details (optional). To hide a field, clear it to "".
 email = "contact@jeromebuisine.fr"
 phone = "+33 6 78 99 46 80"
-address = "3 rue Kant, 59000 Lille, France"
+address = "44 rue Pasteur, 59350 Saint-André-Lez-Lille, France"
 
 # Office hours: use `<br>` to insert a line break, or set to "" to remove office hours
 office_hours = """Everyday 9:00 AM to 8:00 PM"""
@@ -85,10 +85,10 @@ contact_links = [
 #   1: Google Maps
 #   2: OpenStreetMap (Mapnik)
 #   3: OpenStreetMap (Mapbox)
-map = 2
+map = 3
 map_api_key = ""
-latitude = "50.6335502"
-longitude = "3.022847"
+latitude = "50.6581646"
+longitude = "3.0528329"
 zoom = 15
 
 ############################
